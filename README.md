@@ -1,4 +1,4 @@
-- 👋 Hi, I’m Hari Thatikonda
+- 👋 Hi, I’m Hari
 
 - 👀 I’m interested in learning new things
 
