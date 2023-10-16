@@ -6,7 +6,7 @@
 
 - 🪢 Curently learning things required for a full stack developer
 
-- 💞️ I’m looking to collaborate on any projects that make a chanenge in the world
+- 💞️ I’m looking to collaborate on any projects that make a change in the world
 
 - 📫 Reach me on instagram https://www.instagram.com/thug_hari/
                   mail-- thughari3@gmail.com
