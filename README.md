@@ -1,21 +1,15 @@
-- 👋 Hi, I’m Hari
+## Hey, I'm Hari
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=thughari&theme=highcontrast&hide_border=true&border_radius=25&mode=weekly)](https://git.io/streak-stats)
 
-- 👀 I’m interested in learning new things
+![Hari stats](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=thughari&theme=dark)
+![Hari Stats](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=thughari&theme=dark)
 
-- 🌱 Currently Known - Python, C, Java, HTML, CSS, JS
+<a href="https://github.com/ryo-ma/github-profile-trophy">
+  <img width=800 src="https://github-profile-trophy.vercel.app/?username=thughari&column=8&theme=discord&no-frame=true&no-bg=true"/>
+</a>
 
-- 🪢 Curently learning things required for a full stack developer
+### Contact
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/thug_hari) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)]([https://linkedin.com/in/hari](https://www.linkedin.com/in/hari-thatikonda/)) 
 
-- 💞️ I’m looking to collaborate on any projects that make a change in the world
 
-- 📫 Reach me on instagram https://www.instagram.com/thug_hari/
-                  mail-- thughari3@gmail.com
-
-- 🛰️🚀 Intrested about Exploring space (Being a developer is fun but passion is also important💖)
-
-- 🙅‍♂️ Alone Peter Parker 🕷️
-
-<!---
-thughari/thughari is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Also check out [my personal website](https://saumya.vercel.app/)!
