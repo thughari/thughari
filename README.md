@@ -10,6 +10,3 @@
 
 ### Contact
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/thug_hari) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hari-thatikonda/)
-
-
-Also check out [my personal website](https://saumya.vercel.app/)!
