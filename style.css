@@ -1,0 +1,3757 @@
+:root {
+    --ffsd: 0px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .animated {
+      animation: none !important;
+    }
+  }
+  @media not all and (min-resolution: 0.001dpcm) {
+    @media min-resolution{
+      :root {
+        --ffsd: 0.5px;
+      }
+    }
+  }
+  html {
+    zoom: var(--rzf, 1);
+    font-size: max(
+      calc(min(1vw, 13.66px) * var(--rfso, 1)),
+      var(--minfs, 0px)
+    );
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-size: calc(1rem * var(--bfso, 1));
+  }
+  body,
+  html,
+  p,
+  ul,
+  ol,
+  li {
+    margin: 0;
+    padding: 0;
+    font-synthesis: none;
+    font-kerning: none;
+    font-variant-ligatures: none;
+    font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0,
+      "hlig" 0;
+    font-family: unset;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricprecision;
+    white-space: normal;
+  }
+  li {
+    text-align: unset;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/f68d2ebf2a9bbc4b370927d9e193179c.woff2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/4aa69008221f3050f8c0bdce5da959b7.woff2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/00294e54ce8939a73527769e8f886952.woff2);
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/280b68fb999873c69d3c705bf188f505.woff2);
+    font-weight: 700;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/f68d2ebf2a9bbc4b370927d9e193179c.woff2);
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/00294e54ce8939a73527769e8f886952.woff2);
+    font-weight: 100;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/f68d2ebf2a9bbc4b370927d9e193179c.woff2);
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/00294e54ce8939a73527769e8f886952.woff2);
+    font-weight: 200;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/f68d2ebf2a9bbc4b370927d9e193179c.woff2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/00294e54ce8939a73527769e8f886952.woff2);
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/f68d2ebf2a9bbc4b370927d9e193179c.woff2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/00294e54ce8939a73527769e8f886952.woff2);
+    font-weight: 500;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/4aa69008221f3050f8c0bdce5da959b7.woff2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/280b68fb999873c69d3c705bf188f505.woff2);
+    font-weight: 600;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/4aa69008221f3050f8c0bdce5da959b7.woff2);
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/280b68fb999873c69d3c705bf188f505.woff2);
+    font-weight: 800;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/4aa69008221f3050f8c0bdce5da959b7.woff2);
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoJmG5CQ-0;
+    font-display: swap;
+    src: url(fonts/280b68fb999873c69d3c705bf188f505.woff2);
+    font-weight: 900;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/65a93617134605fab29ce1dec92c2ef4.woff2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/01537bc71511c0284b1a63567fc9910e.woff2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/f12c97c419de4ba7c8dad3a7a40d8260.woff2);
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/e6a8507865a2f53ef86e57adce3b55cd.woff2);
+    font-weight: 700;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/65a93617134605fab29ce1dec92c2ef4.woff2);
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/f12c97c419de4ba7c8dad3a7a40d8260.woff2);
+    font-weight: 100;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/65a93617134605fab29ce1dec92c2ef4.woff2);
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/f12c97c419de4ba7c8dad3a7a40d8260.woff2);
+    font-weight: 200;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/65a93617134605fab29ce1dec92c2ef4.woff2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/f12c97c419de4ba7c8dad3a7a40d8260.woff2);
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/65a93617134605fab29ce1dec92c2ef4.woff2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/f12c97c419de4ba7c8dad3a7a40d8260.woff2);
+    font-weight: 500;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/01537bc71511c0284b1a63567fc9910e.woff2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/e6a8507865a2f53ef86e57adce3b55cd.woff2);
+    font-weight: 600;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/01537bc71511c0284b1a63567fc9910e.woff2);
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/e6a8507865a2f53ef86e57adce3b55cd.woff2);
+    font-weight: 800;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/01537bc71511c0284b1a63567fc9910e.woff2);
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACkoH5-tnE-0;
+    font-display: swap;
+    src: url(fonts/e6a8507865a2f53ef86e57adce3b55cd.woff2);
+    font-weight: 900;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/b74499867ba6732cd5bec1de52143c6e.woff2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/87a38abaecd993dc7f78a6b1a731e5c9.woff2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/b74499867ba6732cd5bec1de52143c6e.woff2);
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/87a38abaecd993dc7f78a6b1a731e5c9.woff2);
+    font-weight: 700;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/b74499867ba6732cd5bec1de52143c6e.woff2);
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/b74499867ba6732cd5bec1de52143c6e.woff2);
+    font-weight: 100;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/b74499867ba6732cd5bec1de52143c6e.woff2);
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/b74499867ba6732cd5bec1de52143c6e.woff2);
+    font-weight: 200;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/b74499867ba6732cd5bec1de52143c6e.woff2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/b74499867ba6732cd5bec1de52143c6e.woff2);
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/b74499867ba6732cd5bec1de52143c6e.woff2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/b74499867ba6732cd5bec1de52143c6e.woff2);
+    font-weight: 500;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/87a38abaecd993dc7f78a6b1a731e5c9.woff2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/87a38abaecd993dc7f78a6b1a731e5c9.woff2);
+    font-weight: 600;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/87a38abaecd993dc7f78a6b1a731e5c9.woff2);
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/87a38abaecd993dc7f78a6b1a731e5c9.woff2);
+    font-weight: 800;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/87a38abaecd993dc7f78a6b1a731e5c9.woff2);
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YALBs0kBfmE-0;
+    font-display: swap;
+    src: url(fonts/87a38abaecd993dc7f78a6b1a731e5c9.woff2);
+    font-weight: 900;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/3dae3800fab4aad097008bba4dfa94c1.woff2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/71d66fa3f70c070b9427b4baf1980061.woff2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/0f51da86a058aef1bb585a64cf664ab7.woff2);
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/1aaf8c95b881644a76961b6db0059fc0.woff2);
+    font-weight: 700;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/3dae3800fab4aad097008bba4dfa94c1.woff2);
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/0f51da86a058aef1bb585a64cf664ab7.woff2);
+    font-weight: 100;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/3dae3800fab4aad097008bba4dfa94c1.woff2);
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/0f51da86a058aef1bb585a64cf664ab7.woff2);
+    font-weight: 200;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/3dae3800fab4aad097008bba4dfa94c1.woff2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/0f51da86a058aef1bb585a64cf664ab7.woff2);
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/3dae3800fab4aad097008bba4dfa94c1.woff2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/0f51da86a058aef1bb585a64cf664ab7.woff2);
+    font-weight: 500;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/71d66fa3f70c070b9427b4baf1980061.woff2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/1aaf8c95b881644a76961b6db0059fc0.woff2);
+    font-weight: 600;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/71d66fa3f70c070b9427b4baf1980061.woff2);
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/1aaf8c95b881644a76961b6db0059fc0.woff2);
+    font-weight: 800;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/71d66fa3f70c070b9427b4baf1980061.woff2);
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUi3FOQ-0;
+    font-display: swap;
+    src: url(fonts/1aaf8c95b881644a76961b6db0059fc0.woff2);
+    font-weight: 900;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+    font-weight: 700;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+    font-weight: 100;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+    font-weight: 200;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+    font-weight: 500;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+    font-weight: 600;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+    font-weight: 800;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+    font-weight: 900;
+    font-style: italic;
+  }
+  @media (max-width: 375px) {
+    #yp8Ocny1xglCJelb {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    #TaZzWztm7ekwEQNI {
+      grid-template-columns: 0 498.88910402%;
+      left: -199.44455201%;
+      grid-template-rows: 0 100%;
+    }
+    #xToEDWfangBCAhne {
+      grid-area: 2 / 6 / 3 / 63;
+    }
+    #utdmLtrfy2vAYCGq {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(6.88522979em - var(--ffsd))
+      );
+    }
+    #NVi9VYdAKhdkTtob {
+      transform: translateX(0);
+      margin-top: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 6.88522979em) * -0.05
+      );
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 6.88522979em) * -0.05
+      );
+    }
+    #AeZAXGdET8CKT0aj {
+      min-width: 91.6rem;
+    }
+    #M4xSAVuaGTBpDCqi {
+      grid-area: 4 / 3 / 5 / 65;
+    }
+    #uGqqR9qUsioL1d4a {
+      grid-area: 6 / 28 / 8 / 35;
+    }
+    #QkqEA4txuXvlDdU1 {
+      font-size: max(0px, calc(5.68885333em - var(--ffsd)));
+    }
+    #eujoEsjSpiYpxoaS {
+      transform: translateX(calc(max(0px, 5.68885333em) * 0.05));
+      margin-top: calc(max(0px, 5.68885333em) * -0.1);
+      margin-bottom: calc(max(0px, 5.68885333em) * -0.1);
+    }
+    #n0xtX4voE7YJrShQ {
+      min-width: 22.7994117rem;
+    }
+    #DeCEH8sgaxWJkuQa {
+      grid-area: 7 / 34 / 9 / 45;
+    }
+    #WpdPqZRiK2L2oKcd {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(5.68885333em - var(--ffsd))
+      );
+    }
+    #w4RoSitZX2n0IKSJ {
+      transform: translateX(
+        calc(
+          max(calc(12px * var(--rfso, var(--bfso, 1))), 5.68885333em) * 0.05
+        )
+      );
+      margin-top: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 5.68885333em) * -0.1
+      );
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 5.68885333em) * -0.1
+      );
+    }
+    #JRhI1m12AI0ReOfK {
+      min-width: 64.26031746rem;
+    }
+    #dw36GitbxQvSqt9K {
+      grid-area: 10 / 15 / 11 / 57;
+    }
+    #SLoQA6YMqO0mLiNe {
+      grid-area: 15 / 17 / 18 / 26;
+    }
+    #uZMMckQ6hwig3TaU {
+      grid-area: 13 / 33 / 19 / 38;
+    }
+    #BKUPXAJN7a71E6JQ {
+      grid-area: 14 / 42 / 17 / 46;
+    }
+    #R9h2aXKgKiRp1Smi {
+      grid-area: 12 / 49 / 16 / 52;
+    }
+    #cCzY1REnnsnONpHO {
+      grid-area: 20 / 16 / 23 / 30;
+    }
+    #tcwn81OU5Ekr6lSU {
+      font-size: max(0px, calc(5.68885333em - var(--ffsd)));
+    }
+    #WxgebV3uGVlCpeuV {
+      transform: translateX(calc(max(0px, 5.68885333em) * 0.05));
+      margin-top: calc(max(0px, 5.68885333em) * -0.1);
+      margin-bottom: calc(max(0px, 5.68885333em) * -0.1);
+    }
+    #DwAsKwoUs2D3k0Sn {
+      min-width: 43.47953206rem;
+    }
+    #ZoTyloFygld0GH9L {
+      grid-area: 21 / 27 / 22 / 51;
+    }
+    #rcXUeIL9r0XogVT1 {
+      grid-area: 25 / 2 / 65 / 43;
+    }
+    #zwzywtwfjGUtsjVm {
+      font-size: max(0px, calc(2.76706457em - var(--ffsd)));
+    }
+    #hUgEtbVOBnsSe4B5 {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.76706457em) * -0.1);
+      margin-bottom: calc(max(0px, 2.76706457em) * -0.1);
+    }
+    #PBrwVPlpRuy9RZ1I {
+      min-width: 37.64878151rem;
+    }
+    #UCSxEOhDCNhMw3vW {
+      grid-area: 35 / 7 / 37 / 40;
+    }
+    #zshPNScbONFmsCdW {
+      font-size: max(0px, calc(2.76706457em - var(--ffsd)));
+    }
+    #CRNU4dKaq76gg8uN {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.76706457em) * -0.1);
+      margin-bottom: calc(max(0px, 2.76706457em) * -0.1);
+    }
+    #Fl0EG319fl7Uw8IZ {
+      min-width: 7.52987306rem;
+    }
+    #HtLOjoprXiqW4yFd {
+      grid-area: 34 / 31 / 36 / 37;
+    }
+    #rMoDhFdv3jH2VJ6H {
+      grid-area: 38 / 4 / 43 / 20;
+    }
+    #T2epCZKoLQsk3GTm {
+      font-size: max(0px, calc(2.76706457em - var(--ffsd)));
+    }
+    #mjNcyVpJP8OANXPD {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.76706457em) * -0.1);
+      margin-bottom: calc(max(0px, 2.76706457em) * -0.1);
+    }
+    #HBzdALnJO2ilvzrt {
+      min-width: 37.64878151rem;
+    }
+    #iLYH4eCZ8UxCfyjl {
+      grid-area: 46 / 14 / 48 / 41;
+    }
+    #HQHBApJBnwBWwjBK {
+      grid-area: 50 / 5 / 55 / 21;
+    }
+    #bdV80FYr2toPiXsd {
+      grid-area: 56 / 8 / 62 / 36;
+    }
+    #QRVpQO4rMjv0WUUL {
+      font-size: max(0px, calc(2.42118798em - var(--ffsd)));
+    }
+    #Ts7VRCVyUcLsbMQF {
+      transform: translateX(calc(max(0px, 2.42118798em) * 0.05));
+      margin-top: 0;
+      margin-bottom: calc(max(0px, 2.42118798em) * -0.1);
+    }
+    #f4RIbXDDy47UqQbD {
+      min-width: 12.45707608rem;
+    }
+    #SGU2IQ07rpcxoipl {
+      grid-area: 58 / 19 / 60 / 29;
+    }
+    #a1VNjaSTyVzVvaLi {
+      font-size: max(0px, calc(2.94000286em - var(--ffsd)));
+    }
+    #Gqtddn9EXZ7FuIvq {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.94000286em) * -0.1);
+      margin-bottom: calc(max(0px, 2.94000286em) * -0.1);
+    }
+    #Qf3iAiV39j0rGDha {
+      min-width: 71.25926513rem;
+    }
+    #RN60xn6tMIszGJg5 {
+      grid-area: 26 / 12 / 27 / 61;
+    }
+    #HeFsddog6BhSQQk5 {
+      font-size: max(0px, calc(5.18258436em - var(--ffsd)));
+    }
+    #r9dmwUUvLFR3mmwr {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    #ZCEhDvWzdomwEsir {
+      min-width: 71.25926513rem;
+    }
+    #E7DiiyXVJ2VoWlaN {
+      grid-area: 28 / 11 / 29 / 60;
+    }
+    #y5JkAWInql165RAw {
+      font-size: max(0px, calc(2.59413925em - var(--ffsd)));
+    }
+    #AvixsmbHCc47iYqq {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.59413925em) * -0.15);
+      margin-bottom: calc(max(0px, 2.59413925em) * -0.15);
+    }
+    #JpOf58osmdSeNS5j {
+      min-width: 71.25926513rem;
+    }
+    #D92c9W1uZrZQnT4J {
+      grid-area: 30 / 13 / 31 / 62;
+    }
+    #o2Q9gp8ih6Saf1bY {
+      grid-area: 32 / 9 / 33 / 58;
+    }
+    #sof26m44tZmwq98i {
+      grid-area: 44 / 10 / 45 / 59;
+    }
+    #DGdjgqm2p6am48ZP {
+      margin-left: 0%;
+      clip-path: polygon(
+        calc(0% + 0%) calc((0 * 73.70816201rem) + 0%),
+        calc(100% - (0% + 0%)) calc((0 * 73.70816201rem) + 0%),
+        calc(100% - (0% + 0%))
+          calc(100% - ((0.00117353 * 73.70816201rem) + 0%)),
+        calc(0% + 0%) calc(100% - ((0.00117353 * 73.70816201rem) + 0%))
+      );
+      margin-top: 0%;
+      margin-bottom: -0.11735309%;
+      grid-area: 24 / 18 / 64 / 64;
+      margin-right: 0%;
+    }
+    #ef4g83ddK5uAX41m {
+      font-size: max(0px, calc(2.76706457em - var(--ffsd)));
+    }
+    #WUiLNBMGEsACZ3yz {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.76706457em) * -0.1);
+      margin-bottom: calc(max(0px, 2.76706457em) * -0.1);
+    }
+    #jLVtWgFRkwPs6a09 {
+      min-width: 54.47682051rem;
+    }
+    #vUxMrFJ0RUuwUHVZ {
+      grid-area: 39 / 25 / 40 / 56;
+    }
+    #m4E9kMiXHe8vKMm5 {
+      font-size: max(0px, calc(2.42120095em - var(--ffsd)));
+    }
+    #O8OxJ4EDZTmwqTDT {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.42120095em) * -0.15);
+      margin-bottom: calc(max(0px, 2.42120095em) * -0.15);
+    }
+    #rXTgfZzkYNjd4M7g {
+      min-width: 54.47682051rem;
+    }
+    #ETU7H2SWAGyo8igo {
+      grid-area: 41 / 24 / 42 / 55;
+    }
+    #tkaa4PzUYuoxSxjG {
+      font-size: max(0px, calc(2.76706457em - var(--ffsd)));
+    }
+    #NYiW2jZFn3cuhNXX {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.76706457em) * -0.1);
+      margin-bottom: calc(max(0px, 2.76706457em) * -0.1);
+    }
+    #W89gBk2N1RJ79lbr {
+      min-width: 26.03568346rem;
+    }
+    #A2HAfb6WP6wL6bXm {
+      grid-area: 47 / 32 / 49 / 47;
+    }
+    #BqmWr3TnhoKkt8xz {
+      font-size: max(0px, calc(2.76706457em - var(--ffsd)));
+    }
+    #ChpIEoEdDFwHUBcX {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.76706457em) * -0.1);
+      margin-bottom: calc(max(0px, 2.76706457em) * -0.1);
+    }
+    #CqOjJSIoIFIG5d4H {
+      min-width: 52.32062832rem;
+    }
+    #YkIwRBuBmY8fK4Cw {
+      grid-area: 51 / 23 / 52 / 54;
+    }
+    #VvYd5XpjqgdSEHm9 {
+      font-size: max(0px, calc(2.42120095em - var(--ffsd)));
+    }
+    #pniPRtbxVZw8vvdO {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.42120095em) * -0.15);
+      margin-bottom: calc(max(0px, 2.42120095em) * -0.15);
+    }
+    #tebUpcZhodQGLldH {
+      min-width: 52.32062832rem;
+    }
+    #idthndTL7qbsYjtj {
+      grid-area: 53 / 22 / 54 / 53;
+    }
+    #WLYhTDDUi8jxhYdM {
+      grid-area: 57 / 39 / 63 / 50;
+    }
+    #KeRSP3xjtPjrmT3q {
+      font-size: max(0px, calc(2.42118798em - var(--ffsd)));
+    }
+    #M5PWv6gTXQeM4smB {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(max(0px, 2.42118798em) * -0.1);
+    }
+    #xmaqvAy3q9NUchsQ {
+      min-width: 11.60944762rem;
+    }
+    #Oou1pIK1tM6Fc94U {
+      grid-area: 59 / 44 / 61 / 48;
+    }
+    #M3C2NWHGNhyNPdJr {
+      grid-template-columns: 4.26666667rem 0 4.61826814rem 2.67262512rem 2.24830888rem 0.63116529rem 0.20887272rem 0 0 0 0 0 0 2.52368195rem 0.73074812rem 3.26076346rem 0.86407097rem 1.05526515rem 1.21366217rem 0 1.77360887rem 0 0 0 3.85485993rem 2.74262884rem 1.02695906rem 1.71202388rem 0.34786254rem 0.69012737rem 0 1.4803983rem 0.49583128rem 0.57646053rem 4.84384961rem 0 1.98571534rem 2.92763622rem 3.20042186rem 0.20887272rem 1.10174513rem 1.80718954rem 1.53617245rem 4.47801497rem 0.45108357rem 0.8089586rem 5.73805714rem 1.4786653rem 6.37573641rem 0.0744169rem 1.29366632rem 0.94994117rem 0 2.15619219rem 0 0.88537822rem 4.47526572rem 0 0 0 0 0.78889378rem 9.17260093rem 0.00000002rem 4.26666667rem;
+      grid-template-rows: minmax(6.4rem, max-content) minmax(
+          72.75486358rem,
+          max-content
+        ) minmax(7.75746076rem, max-content) minmax(
+          8.16392323rem,
+          max-content
+        ) minmax(1.7534921rem, max-content) minmax(
+          1.46938625rem,
+          max-content
+        ) minmax(6.59556267rem, max-content) 0 minmax(
+          16.84237197rem,
+          max-content
+        ) minmax(6.59556267rem, max-content) minmax(
+          3.53093772rem,
+          max-content
+        ) minmax(0.50657663rem, max-content) minmax(
+          0.50657663rem,
+          max-content
+        ) 0 minmax(6.88870349rem, max-content) 0 0 minmax(
+          0.50657663rem,
+          max-content
+        ) minmax(12.27559398rem, max-content) minmax(
+          7.30362661rem,
+          max-content
+        ) minmax(6.59556267rem, max-content) minmax(
+          1.71293807rem,
+          max-content
+        ) minmax(6.4rem, max-content) 0 minmax(3.47421268rem, max-content) minmax(
+          3.43291526rem,
+          max-content
+        ) minmax(0.58587128rem, max-content) minmax(
+          6.09622723rem,
+          max-content
+        ) minmax(1.65821942rem, max-content) minmax(
+          18.67780257rem,
+          max-content
+        ) minmax(3.13137252rem, max-content) minmax(
+          0.25941392rem,
+          max-content
+        ) minmax(2.21195721rem, max-content) 0 minmax(
+          3.20808899rem,
+          max-content
+        ) 0 minmax(1.02148113rem, max-content) minmax(
+          1.18353723rem,
+          max-content
+        ) minmax(3.20808899rem, max-content) minmax(
+          1.41125171rem,
+          max-content
+        ) minmax(6.5372296rem, max-content) minmax(
+          0.26739013rem,
+          max-content
+        ) minmax(2.87084765rem, max-content) minmax(
+          0.25941392rem,
+          max-content
+        ) minmax(6.35190814rem, max-content) 0 minmax(
+          3.20808899rem,
+          max-content
+        ) 0 minmax(1.0376557rem, max-content) minmax(
+          1.55648355rem,
+          max-content
+        ) minmax(3.20808899rem, max-content) minmax(
+          1.41125171rem,
+          max-content
+        ) minmax(2.90543466rem, max-content) minmax(
+          3.65527978rem,
+          max-content
+        ) minmax(1.46998581rem, max-content) 0 minmax(
+          2.04942942rem,
+          max-content
+        ) 0 minmax(2.88814342rem, max-content) 0 minmax(
+          1.74983777rem,
+          max-content
+        ) 0 minmax(8.54153883rem, max-content) 0 minmax(6.4rem, max-content);
+    }
+    #hSeTxkXmfpms9Bqd {
+      min-height: 44.19923632vh;
+    }
+    #FlTtMyfOjefd9Mwr {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    #u89dv1QbGlxkSVra {
+      grid-template-columns: 0 658.04083106%;
+      left: -279.02041553%;
+      grid-template-rows: 0 100% 0;
+    }
+    #Q0HMUxI6Gl1ZFZSn {
+      grid-area: 4 / 2 / 6 / 19;
+    }
+    #QBYInwH5eCRM4oKK {
+      grid-area: 2 / 4 / 8 / 34;
+    }
+    #Ff9V0kJHqVuccH7x {
+      font-size: max(0px, calc(11.60472596em - var(--ffsd)));
+    }
+    #PgcmwowcKoh1OOkq {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(max(0px, 11.60472596em) * 0.1);
+    }
+    #SdhLmEWQOn9Yaqm4 {
+      min-width: 72.04406137rem;
+    }
+    #S43ncS0xEjKDvkg4 {
+      grid-area: 5 / 18 / 7 / 25;
+    }
+    #nvIYmZiB6yweZa75 {
+      grid-area: 3 / 10 / 9 / 35;
+    }
+    #pgEA5W13hYS4hnoD {
+      grid-area: 10 / 11 / 11 / 27;
+    }
+    #qGOfP0Kw8YxMD6n1 {
+      grid-area: 12 / 3 / 15 / 33;
+    }
+    #euKLKtgOd6wszxoe {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(7.14666323em - var(--ffsd))
+      );
+    }
+    #jALOQVUPF5DJZ2kd {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 7.14666323em) * 0.1
+      );
+    }
+    #QPsLM8k8j9TwAH7J {
+      min-width: 76.96709677rem;
+    }
+    #jqm6AFef6gDiuS9j {
+      grid-area: 13 / 12 / 14 / 26;
+    }
+    #UIfvzQ3J7VKJFAWU {
+      grid-area: 16 / 6 / 19 / 29;
+    }
+    #bDxd2lKSBdCunfQm {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(7.14666323em - var(--ffsd))
+      );
+    }
+    #Z1XmDk3jzmbD9zIO {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 7.14666323em) * 0.1
+      );
+    }
+    #uHnjb1dsvyaFSqfK {
+      min-width: 70.70725392rem;
+    }
+    #BVgnLi45KCCLX13p {
+      grid-area: 17 / 14 / 18 / 21;
+    }
+    #QVzoUjui6T0XVPr9 {
+      grid-area: 20 / 5 / 23 / 28;
+    }
+    #SzpLW1A4e8EQCd07 {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(7.14666323em - var(--ffsd))
+      );
+    }
+    #I2N3MKwUv82F2f7d {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 7.14666323em) * 0.1
+      );
+    }
+    #huSgACAXKRXRXVkZ {
+      min-width: 70.70725392rem;
+    }
+    #V6Hrsln7DhO4CegU {
+      grid-area: 21 / 13 / 22 / 20;
+    }
+    #UtJAjzKHb718kJs7 {
+      grid-area: 24 / 7 / 27 / 30;
+    }
+    #vz2hhGzmZYQz0U78 {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(7.14666323em - var(--ffsd))
+      );
+    }
+    #SnKqmuFxepGFKILR {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 7.14666323em) * 0.1
+      );
+    }
+    #W9gg8yeJxDusBG8K {
+      min-width: 70.70725392rem;
+    }
+    #fZA7z5BSYY3sBknL {
+      grid-area: 25 / 15 / 26 / 22;
+    }
+    #tIV5Q5TcrreORdau {
+      grid-area: 28 / 8 / 31 / 31;
+    }
+    #SKMfkNagUgikczYJ {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(7.14666323em - var(--ffsd))
+      );
+    }
+    #E3n1oZ79QC1P54So {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 7.14666323em) * 0.1
+      );
+    }
+    #vIwmDmIOV92hDY8v {
+      min-width: 70.70725392rem;
+    }
+    #Jt2fdu4tnJ5hl1pc {
+      grid-area: 29 / 16 / 30 / 23;
+    }
+    #aGfMZoDCy7y4KOx6 {
+      grid-area: 32 / 9 / 35 / 32;
+    }
+    #uLbVLAZ3xVvv2eE9 {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(7.14666323em - var(--ffsd))
+      );
+    }
+    #ZOKPQMz92mstqqLn {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 7.14666323em) * 0.1
+      );
+    }
+    #dDCshLUMNq1Bp9Ea {
+      min-width: 70.70725392rem;
+    }
+    #twAZeU6a7rTHC01N {
+      grid-area: 33 / 17 / 34 / 24;
+    }
+    #Rv36pyGhY2Mi8Dvz {
+      grid-template-columns: 4.26666667rem 2.17797426rem 2.00275421rem 1.54581208rem 0 0 0 0 0.29455621rem 0.29266818rem 1.00268667rem 3.12992143rem 0 0 0 0 0.86044151rem 20.92734777rem 48.7861313rem 0 0 0 0 2.19724897rem 0.93267246rem 1.00268667rem 0.58722439rem 0 0 0 0 3.54856629rem 0.33760598rem 1.84036829rem 4.26666667rem;
+      grid-template-rows: minmax(6.4rem, max-content) minmax(
+          1.91389605rem,
+          max-content
+        ) minmax(4.1998117rem, max-content) minmax(
+          0.78398991rem,
+          max-content
+        ) minmax(23.18650535rem, max-content) minmax(
+          2.34389178rem,
+          max-content
+        ) minmax(7.83356265rem, max-content) minmax(
+          1.91389605rem,
+          max-content
+        ) minmax(6.4rem, max-content) minmax(78.40910512rem, max-content) minmax(
+          18.34000767rem,
+          max-content
+        ) minmax(6.88769506rem, max-content) minmax(
+          8.57599587rem,
+          max-content
+        ) minmax(9.59014624rem, max-content) minmax(6.4rem, max-content) minmax(
+          6.88769506rem,
+          max-content
+        ) minmax(8.57599587rem, max-content) minmax(
+          9.59014624rem,
+          max-content
+        ) minmax(13.23185869rem, max-content) minmax(
+          6.88769506rem,
+          max-content
+        ) minmax(8.57599587rem, max-content) minmax(
+          9.59014624rem,
+          max-content
+        ) minmax(6.4rem, max-content) minmax(6.88769506rem, max-content) minmax(
+          8.57599587rem,
+          max-content
+        ) minmax(9.59014624rem, max-content) minmax(6.4rem, max-content) minmax(
+          6.88769506rem,
+          max-content
+        ) minmax(8.57599587rem, max-content) minmax(
+          9.59014624rem,
+          max-content
+        ) minmax(13.23185869rem, max-content) minmax(
+          6.88769506rem,
+          max-content
+        ) minmax(8.57599587rem, max-content) minmax(
+          9.59014624rem,
+          max-content
+        ) minmax(6.4rem, max-content);
+    }
+    #MKQebh2JK1V4cpdL {
+      min-height: 55.80076368vh;
+    }
+  }
+  @media (min-width: 375.05px) and (max-width: 480px) {
+    #yp8Ocny1xglCJelb {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    #TaZzWztm7ekwEQNI {
+      grid-template-columns: 0 435.56704262%;
+      left: -167.78352131%;
+      grid-template-rows: 0 100% 0;
+    }
+    #xToEDWfangBCAhne {
+      grid-area: 2 / 15 / 3 / 54;
+    }
+    #utdmLtrfy2vAYCGq {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(7.02574469em - var(--ffsd))
+      );
+    }
+    #NVi9VYdAKhdkTtob {
+      transform: translateX(0);
+      margin-top: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 7.02574469em) * -0.05
+      );
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 7.02574469em) * -0.05
+      );
+    }
+    #AeZAXGdET8CKT0aj {
+      min-width: 93.4375rem;
+    }
+    #M4xSAVuaGTBpDCqi {
+      grid-area: 4 / 3 / 5 / 65;
+    }
+    #uGqqR9qUsioL1d4a {
+      grid-area: 6 / 31 / 8 / 35;
+    }
+    #QkqEA4txuXvlDdU1 {
+      font-size: max(0px, calc(4.44441667em - var(--ffsd)));
+    }
+    #eujoEsjSpiYpxoaS {
+      transform: translateX(calc(max(0px, 4.44441667em) * 0.05));
+      margin-top: calc(max(0px, 4.44441667em) * -0.1);
+      margin-bottom: calc(max(0px, 4.44441667em) * -0.1);
+    }
+    #n0xtX4voE7YJrShQ {
+      min-width: 17.81204039rem;
+    }
+    #DeCEH8sgaxWJkuQa {
+      grid-area: 7 / 34 / 9 / 45;
+    }
+    #WpdPqZRiK2L2oKcd {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(4.44441667em - var(--ffsd))
+      );
+    }
+    #w4RoSitZX2n0IKSJ {
+      transform: translateX(
+        calc(
+          max(calc(12px * var(--rfso, var(--bfso, 1))), 4.44441667em) * 0.05
+        )
+      );
+      margin-top: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 4.44441667em) * -0.1
+      );
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 4.44441667em) * -0.1
+      );
+    }
+    #JRhI1m12AI0ReOfK {
+      min-width: 50.20337302rem;
+    }
+    #dw36GitbxQvSqt9K {
+      grid-area: 10 / 18 / 11 / 52;
+    }
+    #SLoQA6YMqO0mLiNe {
+      grid-area: 15 / 25 / 18 / 26;
+    }
+    #uZMMckQ6hwig3TaU {
+      grid-area: 13 / 33 / 19 / 38;
+    }
+    #BKUPXAJN7a71E6JQ {
+      grid-area: 14 / 40 / 17 / 46;
+    }
+    #R9h2aXKgKiRp1Smi {
+      grid-area: 12 / 48 / 16 / 51;
+    }
+    #cCzY1REnnsnONpHO {
+      grid-area: 20 / 17 / 23 / 32;
+    }
+    #tcwn81OU5Ekr6lSU {
+      font-size: max(0px, calc(4.44441667em - var(--ffsd)));
+    }
+    #WxgebV3uGVlCpeuV {
+      transform: translateX(calc(max(0px, 4.44441667em) * 0.05));
+      margin-top: calc(max(0px, 4.44441667em) * -0.1);
+      margin-bottom: calc(max(0px, 4.44441667em) * -0.1);
+    }
+    #DwAsKwoUs2D3k0Sn {
+      min-width: 33.96838442rem;
+    }
+    #ZoTyloFygld0GH9L {
+      grid-area: 21 / 27 / 22 / 49;
+    }
+    #rcXUeIL9r0XogVT1 {
+      grid-area: 25 / 2 / 65 / 43;
+    }
+    #zwzywtwfjGUtsjVm {
+      font-size: max(0px, calc(2.82353527em - var(--ffsd)));
+    }
+    #hUgEtbVOBnsSe4B5 {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.82353527em) * -0.1);
+      margin-bottom: calc(max(0px, 2.82353527em) * -0.1);
+    }
+    #PBrwVPlpRuy9RZ1I {
+      min-width: 38.38523623rem;
+    }
+    #UCSxEOhDCNhMw3vW {
+      grid-area: 35 / 6 / 37 / 41;
+    }
+    #zshPNScbONFmsCdW {
+      font-size: max(0px, calc(2.82353527em - var(--ffsd)));
+    }
+    #CRNU4dKaq76gg8uN {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.82353527em) * -0.1);
+      margin-bottom: calc(max(0px, 2.82353527em) * -0.1);
+    }
+    #Fl0EG319fl7Uw8IZ {
+      min-width: 7.65165618rem;
+    }
+    #HtLOjoprXiqW4yFd {
+      grid-area: 34 / 29 / 36 / 37;
+    }
+    #rMoDhFdv3jH2VJ6H {
+      grid-area: 38 / 4 / 43 / 19;
+    }
+    #T2epCZKoLQsk3GTm {
+      font-size: max(0px, calc(2.82353527em - var(--ffsd)));
+    }
+    #mjNcyVpJP8OANXPD {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.82353527em) * -0.1);
+      margin-bottom: calc(max(0px, 2.82353527em) * -0.1);
+    }
+    #HBzdALnJO2ilvzrt {
+      min-width: 38.38523623rem;
+    }
+    #iLYH4eCZ8UxCfyjl {
+      grid-area: 46 / 13 / 48 / 42;
+    }
+    #HQHBApJBnwBWwjBK {
+      grid-area: 50 / 5 / 55 / 20;
+    }
+    #bdV80FYr2toPiXsd {
+      grid-area: 56 / 7 / 62 / 36;
+    }
+    #QRVpQO4rMjv0WUUL {
+      font-size: max(0px, calc(2.47059998em - var(--ffsd)));
+    }
+    #Ts7VRCVyUcLsbMQF {
+      transform: translateX(calc(max(0px, 2.47059998em) * 0.05));
+      margin-top: 0;
+      margin-bottom: calc(max(0px, 2.47059998em) * -0.1);
+    }
+    #f4RIbXDDy47UqQbD {
+      min-width: 12.67941437rem;
+    }
+    #SGU2IQ07rpcxoipl {
+      grid-area: 58 / 16 / 60 / 28;
+    }
+    #a1VNjaSTyVzVvaLi {
+      font-size: max(0px, calc(3.00000292em - var(--ffsd)));
+    }
+    #Gqtddn9EXZ7FuIvq {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 3.00000292em) * -0.1);
+      margin-bottom: calc(max(0px, 3.00000292em) * -0.1);
+    }
+    #Qf3iAiV39j0rGDha {
+      min-width: 72.68164809rem;
+    }
+    #RN60xn6tMIszGJg5 {
+      grid-area: 26 / 11 / 27 / 62;
+    }
+    #HeFsddog6BhSQQk5 {
+      font-size: max(0px, calc(5.28835138em - var(--ffsd)));
+    }
+    #r9dmwUUvLFR3mmwr {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    #ZCEhDvWzdomwEsir {
+      min-width: 72.68164809rem;
+    }
+    #E7DiiyXVJ2VoWlaN {
+      grid-area: 28 / 10 / 29 / 61;
+    }
+    #y5JkAWInql165RAw {
+      font-size: max(0px, calc(2.64708086em - var(--ffsd)));
+    }
+    #AvixsmbHCc47iYqq {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.64708086em) * -0.15);
+      margin-bottom: calc(max(0px, 2.64708086em) * -0.15);
+    }
+    #JpOf58osmdSeNS5j {
+      min-width: 72.68164809rem;
+    }
+    #D92c9W1uZrZQnT4J {
+      grid-area: 30 / 12 / 31 / 63;
+    }
+    #o2Q9gp8ih6Saf1bY {
+      grid-area: 32 / 8 / 33 / 59;
+    }
+    #sof26m44tZmwq98i {
+      grid-area: 44 / 9 / 45 / 60;
+    }
+    #DGdjgqm2p6am48ZP {
+      margin-left: 0%;
+      clip-path: polygon(
+        calc(0% + 0%) calc((0 * 75.2124102rem) + 0%),
+        calc(100% - (0% + 0%)) calc((0 * 75.2124102rem) + 0%),
+        calc(100% - (0% + 0%))
+          calc(100% - ((0.00117353 * 75.2124102rem) + 0%)),
+        calc(0% + 0%) calc(100% - ((0.00117353 * 75.2124102rem) + 0%))
+      );
+      margin-top: 0%;
+      margin-bottom: -0.11735309%;
+      grid-area: 24 / 14 / 64 / 64;
+      margin-right: 0%;
+    }
+    #ef4g83ddK5uAX41m {
+      font-size: max(0px, calc(2.82353527em - var(--ffsd)));
+    }
+    #WUiLNBMGEsACZ3yz {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.82353527em) * -0.1);
+      margin-bottom: calc(max(0px, 2.82353527em) * -0.1);
+    }
+    #jLVtWgFRkwPs6a09 {
+      min-width: 55.5567046rem;
+    }
+    #vUxMrFJ0RUuwUHVZ {
+      grid-area: 39 / 24 / 40 / 58;
+    }
+    #m4E9kMiXHe8vKMm5 {
+      font-size: max(0px, calc(2.47061322em - var(--ffsd)));
+    }
+    #O8OxJ4EDZTmwqTDT {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.47061322em) * -0.15);
+      margin-bottom: calc(max(0px, 2.47061322em) * -0.15);
+    }
+    #rXTgfZzkYNjd4M7g {
+      min-width: 55.5567046rem;
+    }
+    #ETU7H2SWAGyo8igo {
+      grid-area: 41 / 23 / 42 / 57;
+    }
+    #tkaa4PzUYuoxSxjG {
+      font-size: max(0px, calc(2.82353527em - var(--ffsd)));
+    }
+    #NYiW2jZFn3cuhNXX {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.82353527em) * -0.1);
+      margin-bottom: calc(max(0px, 2.82353527em) * -0.1);
+    }
+    #W89gBk2N1RJ79lbr {
+      min-width: 26.53513618rem;
+    }
+    #A2HAfb6WP6wL6bXm {
+      grid-area: 47 / 30 / 49 / 47;
+    }
+    #BqmWr3TnhoKkt8xz {
+      font-size: max(0px, calc(2.82353527em - var(--ffsd)));
+    }
+    #ChpIEoEdDFwHUBcX {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.82353527em) * -0.1);
+      margin-bottom: calc(max(0px, 2.82353527em) * -0.1);
+    }
+    #CqOjJSIoIFIG5d4H {
+      min-width: 53.35650849rem;
+    }
+    #YkIwRBuBmY8fK4Cw {
+      grid-area: 51 / 22 / 52 / 56;
+    }
+    #VvYd5XpjqgdSEHm9 {
+      font-size: max(0px, calc(2.47061322em - var(--ffsd)));
+    }
+    #pniPRtbxVZw8vvdO {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.47061322em) * -0.15);
+      margin-bottom: calc(max(0px, 2.47061322em) * -0.15);
+    }
+    #tebUpcZhodQGLldH {
+      min-width: 53.35650849rem;
+    }
+    #idthndTL7qbsYjtj {
+      grid-area: 53 / 21 / 54 / 55;
+    }
+    #WLYhTDDUi8jxhYdM {
+      grid-area: 57 / 39 / 63 / 53;
+    }
+    #KeRSP3xjtPjrmT3q {
+      font-size: max(0px, calc(2.47059998em - var(--ffsd)));
+    }
+    #M5PWv6gTXQeM4smB {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(max(0px, 2.47059998em) * -0.1);
+    }
+    #xmaqvAy3q9NUchsQ {
+      min-width: 11.81448736rem;
+    }
+    #Oou1pIK1tM6Fc94U {
+      grid-area: 59 / 44 / 61 / 50;
+    }
+    #M3C2NWHGNhyNPdJr {
+      grid-template-columns: 3.33333333rem 0 4.71251851rem 2.72716849rem 2.93823895rem 0.21313543rem 0 0 0 0 0 0 7.52986173rem 0.4833658rem 0.59343537rem 0.3947017rem 0.8118553rem 0.03187378rem 0 1.80980497rem 0 0 0 1.27668966rem 6.84489616rem 0.75992651rem 0.64549961rem 1.05917339rem 0 0.20238804rem 0.504537rem 3.07847545rem 0.1093652rem 0.45035979rem 3.20236404rem 0 2.41123657rem 2.60238747rem 3.20907811rem 0.05665849rem 0.21313543rem 2.96830068rem 1.56752291rem 1.02683024rem 0.63041203rem 4.19791807rem 2.07214524rem 3.65643rem 0.1265851rem 2.26684398rem 3.11836842rem 2.62948322rem 2.31105524rem 0.05427577rem 0 2.20019611rem 0 5.47004483rem 0 0 0 0 10.16479051rem 0.00000003rem 3.33333333rem;
+      grid-template-rows: minmax(5rem, max-content) minmax(
+          56.83973717rem,
+          max-content
+        ) minmax(6.06051622rem, max-content) minmax(
+          8.33053391rem,
+          max-content
+        ) minmax(1.3699157rem, max-content) minmax(
+          1.14795801rem,
+          max-content
+        ) minmax(5.15278333rem, max-content) 0 minmax(
+          13.1581031rem,
+          max-content
+        ) minmax(5.15278333rem, max-content) minmax(
+          2.75854509rem,
+          max-content
+        ) minmax(0.395763rem, max-content) minmax(0.395763rem, max-content) 0 minmax(
+          5.3817996rem,
+          max-content
+        ) 0 0 minmax(0.395763rem, max-content) minmax(
+          9.59030779rem,
+          max-content
+        ) minmax(5.70595829rem, max-content) minmax(
+          5.15278333rem,
+          max-content
+        ) minmax(1.33823287rem, max-content) minmax(5rem, max-content) 0 minmax(
+          3.54511498rem,
+          max-content
+        ) minmax(3.50297475rem, max-content) minmax(
+          0.59782784rem,
+          max-content
+        ) minmax(6.22064003rem, max-content) minmax(
+          1.69206064rem,
+          max-content
+        ) minmax(19.05898221rem, max-content) minmax(
+          3.19527808rem,
+          max-content
+        ) minmax(0.26470809rem, max-content) minmax(
+          2.25709919rem,
+          max-content
+        ) 0 minmax(3.2735602rem, max-content) 0 minmax(
+          1.04232768rem,
+          max-content
+        ) minmax(1.20769105rem, max-content) minmax(
+          3.2735602rem,
+          max-content
+        ) minmax(1.44005277rem, max-content) minmax(
+          6.67064245rem,
+          max-content
+        ) minmax(0.27284707rem, max-content) minmax(
+          2.92943638rem,
+          max-content
+        ) minmax(0.26470809rem, max-content) minmax(
+          6.48153892rem,
+          max-content
+        ) 0 minmax(3.2735602rem, max-content) 0 minmax(
+          1.05883235rem,
+          max-content
+        ) minmax(1.58824852rem, max-content) minmax(
+          3.2735602rem,
+          max-content
+        ) minmax(1.44005277rem, max-content) minmax(
+          2.96472924rem,
+          max-content
+        ) minmax(3.72987733rem, max-content) minmax(
+          1.49998552rem,
+          max-content
+        ) 0 minmax(2.09125451rem, max-content) 0 minmax(
+          2.94708513rem,
+          max-content
+        ) 0 minmax(1.78554874rem, max-content) 0 minmax(
+          8.71585595rem,
+          max-content
+        ) 0 minmax(5rem, max-content);
+    }
+    #hSeTxkXmfpms9Bqd {
+      min-height: 46.19095416vh;
+    }
+    #FlTtMyfOjefd9Mwr {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    #u89dv1QbGlxkSVra {
+      grid-template-columns: 0 530.12320512%;
+      left: -215.06160256%;
+      grid-template-rows: 0 100%;
+    }
+    #Q0HMUxI6Gl1ZFZSn {
+      grid-area: 4 / 2 / 6 / 19;
+    }
+    #QBYInwH5eCRM4oKK {
+      grid-area: 2 / 3 / 8 / 34;
+    }
+    #Ff9V0kJHqVuccH7x {
+      font-size: max(0px, calc(11.43954518em - var(--ffsd)));
+    }
+    #PgcmwowcKoh1OOkq {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(max(0px, 11.43954518em) * 0.1);
+    }
+    #SdhLmEWQOn9Yaqm4 {
+      min-width: 70.9913229rem;
+    }
+    #S43ncS0xEjKDvkg4 {
+      grid-area: 5 / 6 / 7 / 33;
+    }
+    #nvIYmZiB6yweZa75 {
+      grid-area: 3 / 4 / 9 / 35;
+    }
+    #pgEA5W13hYS4hnoD {
+      grid-area: 10 / 12 / 11 / 26;
+    }
+    #qGOfP0Kw8YxMD6n1 {
+      grid-area: 12 / 5 / 15 / 32;
+    }
+    #euKLKtgOd6wszxoe {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(5.58333065em - var(--ffsd))
+      );
+    }
+    #jALOQVUPF5DJZ2kd {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 5.58333065em) * 0.1
+      );
+    }
+    #QPsLM8k8j9TwAH7J {
+      min-width: 60.13054435rem;
+    }
+    #jqm6AFef6gDiuS9j {
+      grid-area: 13 / 13 / 14 / 25;
+    }
+    #UIfvzQ3J7VKJFAWU {
+      grid-area: 16 / 8 / 19 / 28;
+    }
+    #bDxd2lKSBdCunfQm {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(5.58333065em - var(--ffsd))
+      );
+    }
+    #Z1XmDk3jzmbD9zIO {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 5.58333065em) * 0.1
+      );
+    }
+    #uHnjb1dsvyaFSqfK {
+      min-width: 55.24004212rem;
+    }
+    #BVgnLi45KCCLX13p {
+      grid-area: 17 / 15 / 18 / 21;
+    }
+    #QVzoUjui6T0XVPr9 {
+      grid-area: 20 / 7 / 23 / 27;
+    }
+    #SzpLW1A4e8EQCd07 {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(5.58333065em - var(--ffsd))
+      );
+    }
+    #I2N3MKwUv82F2f7d {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 5.58333065em) * 0.1
+      );
+    }
+    #huSgACAXKRXRXVkZ {
+      min-width: 55.24004212rem;
+    }
+    #V6Hrsln7DhO4CegU {
+      grid-area: 21 / 14 / 22 / 20;
+    }
+    #UtJAjzKHb718kJs7 {
+      grid-area: 24 / 9 / 27 / 29;
+    }
+    #vz2hhGzmZYQz0U78 {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(5.58333065em - var(--ffsd))
+      );
+    }
+    #SnKqmuFxepGFKILR {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 5.58333065em) * 0.1
+      );
+    }
+    #W9gg8yeJxDusBG8K {
+      min-width: 55.24004212rem;
+    }
+    #fZA7z5BSYY3sBknL {
+      grid-area: 25 / 16 / 26 / 22;
+    }
+    #tIV5Q5TcrreORdau {
+      grid-area: 28 / 10 / 31 / 30;
+    }
+    #SKMfkNagUgikczYJ {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(5.58333065em - var(--ffsd))
+      );
+    }
+    #E3n1oZ79QC1P54So {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 5.58333065em) * 0.1
+      );
+    }
+    #vIwmDmIOV92hDY8v {
+      min-width: 55.24004212rem;
+    }
+    #Jt2fdu4tnJ5hl1pc {
+      grid-area: 29 / 17 / 30 / 23;
+    }
+    #aGfMZoDCy7y4KOx6 {
+      grid-area: 32 / 11 / 35 / 31;
+    }
+    #uLbVLAZ3xVvv2eE9 {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(5.58333065em - var(--ffsd))
+      );
+    }
+    #ZOKPQMz92mstqqLn {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 5.58333065em) * 0.1
+      );
+    }
+    #dDCshLUMNq1Bp9Ea {
+      min-width: 55.24004212rem;
+    }
+    #twAZeU6a7rTHC01N {
+      grid-area: 33 / 18 / 34 / 24;
+    }
+    #Rv36pyGhY2Mi8Dvz {
+      grid-template-columns: 4.91763144rem 4.12122031rem 1.81417263rem 5.11935136rem 0.09112993rem 2.68118749rem 0 0 0 0 0.45876905rem 0.78334896rem 2.44525111rem 0 0 0 0 14.26091289rem 40.87496257rem 0 0 0 0 2.44525111rem 0.78334896rem 0.45876905rem 0 0 0 0 2.77231742rem 2.92303762rem 6.31753404rem 1.81417263rem 4.91763144rem;
+      grid-template-rows: minmax(5rem, max-content) minmax(
+          1.8866538rem,
+          max-content
+        ) minmax(4.1400319rem, max-content) minmax(
+          0.77283066rem,
+          max-content
+        ) minmax(22.8564704rem, max-content) minmax(
+          2.310529rem,
+          max-content
+        ) minmax(7.72206032rem, max-content) minmax(
+          1.8866538rem,
+          max-content
+        ) minmax(5rem, max-content) minmax(61.25711338rem, max-content) minmax(
+          14.32813099rem,
+          max-content
+        ) minmax(5.38101176rem, max-content) minmax(
+          6.69999678rem,
+          max-content
+        ) minmax(7.49230175rem, max-content) minmax(5rem, max-content) minmax(
+          5.38101176rem,
+          max-content
+        ) minmax(6.69999678rem, max-content) minmax(
+          7.49230175rem,
+          max-content
+        ) minmax(10.3373896rem, max-content) minmax(
+          5.38101176rem,
+          max-content
+        ) minmax(6.69999678rem, max-content) minmax(
+          7.49230175rem,
+          max-content
+        ) minmax(5rem, max-content) minmax(5.38101176rem, max-content) minmax(
+          6.69999678rem,
+          max-content
+        ) minmax(7.49230175rem, max-content) minmax(5rem, max-content) minmax(
+          5.38101176rem,
+          max-content
+        ) minmax(6.69999678rem, max-content) minmax(
+          7.49230175rem,
+          max-content
+        ) minmax(10.3373896rem, max-content) minmax(
+          5.38101176rem,
+          max-content
+        ) minmax(6.69999678rem, max-content) minmax(
+          7.49230175rem,
+          max-content
+        ) minmax(5rem, max-content);
+    }
+    #MKQebh2JK1V4cpdL {
+      min-height: 53.80904584vh;
+    }
+  }
+  @media (min-width: 480.05px) and (max-width: 768px) {
+    #yp8Ocny1xglCJelb {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    #TaZzWztm7ekwEQNI {
+      grid-template-columns: 0 343.29271651%;
+      left: -121.64635826%;
+      grid-template-rows: 0 100%;
+    }
+    #xToEDWfangBCAhne {
+      grid-area: 2 / 23 / 3 / 52;
+    }
+    #utdmLtrfy2vAYCGq {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(4.86110677em - var(--ffsd))
+      );
+    }
+    #NVi9VYdAKhdkTtob {
+      transform: translateX(0);
+      margin-top: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 4.86110677em) * -0.05
+      );
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 4.86110677em) * -0.05
+      );
+    }
+    #AeZAXGdET8CKT0aj {
+      min-width: 64.64235808rem;
+    }
+    #M4xSAVuaGTBpDCqi {
+      grid-area: 4 / 13 / 5 / 59;
+    }
+    #uGqqR9qUsioL1d4a {
+      grid-area: 6 / 32 / 8 / 35;
+    }
+    #QkqEA4txuXvlDdU1 {
+      font-size: max(0px, calc(2.77776042em - var(--ffsd)));
+    }
+    #eujoEsjSpiYpxoaS {
+      transform: translateX(calc(max(0px, 2.77776042em) * 0.05));
+      margin-top: calc(max(0px, 2.77776042em) * -0.1);
+      margin-bottom: calc(max(0px, 2.77776042em) * -0.1);
+    }
+    #n0xtX4voE7YJrShQ {
+      min-width: 11.13252525rem;
+    }
+    #DeCEH8sgaxWJkuQa {
+      grid-area: 7 / 33 / 9 / 43;
+    }
+    #WpdPqZRiK2L2oKcd {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(2.77776042em - var(--ffsd))
+      );
+    }
+    #w4RoSitZX2n0IKSJ {
+      transform: translateX(
+        calc(
+          max(calc(12px * var(--rfso, var(--bfso, 1))), 2.77776042em) * 0.05
+        )
+      );
+      margin-top: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 2.77776042em) * -0.1
+      );
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 2.77776042em) * -0.1
+      );
+    }
+    #JRhI1m12AI0ReOfK {
+      min-width: 31.37710813rem;
+    }
+    #dw36GitbxQvSqt9K {
+      grid-area: 10 / 24 / 11 / 51;
+    }
+    #SLoQA6YMqO0mLiNe {
+      grid-area: 15 / 25 / 18 / 29;
+    }
+    #uZMMckQ6hwig3TaU {
+      grid-area: 13 / 34 / 19 / 38;
+    }
+    #BKUPXAJN7a71E6JQ {
+      grid-area: 14 / 40 / 17 / 44;
+    }
+    #R9h2aXKgKiRp1Smi {
+      grid-area: 12 / 47 / 16 / 50;
+    }
+    #cCzY1REnnsnONpHO {
+      grid-area: 20 / 22 / 23 / 31;
+    }
+    #tcwn81OU5Ekr6lSU {
+      font-size: max(0px, calc(2.77776042em - var(--ffsd)));
+    }
+    #WxgebV3uGVlCpeuV {
+      transform: translateX(calc(max(0px, 2.77776042em) * 0.05));
+      margin-top: calc(max(0px, 2.77776042em) * -0.1);
+      margin-bottom: calc(max(0px, 2.77776042em) * -0.1);
+    }
+    #DwAsKwoUs2D3k0Sn {
+      min-width: 21.23024027rem;
+    }
+    #ZoTyloFygld0GH9L {
+      grid-area: 21 / 30 / 22 / 48;
+    }
+    #rcXUeIL9r0XogVT1 {
+      grid-area: 25 / 2 / 65 / 45;
+    }
+    #zwzywtwfjGUtsjVm {
+      font-size: max(0px, calc(2.773115em - var(--ffsd)));
+    }
+    #hUgEtbVOBnsSe4B5 {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.773115em) * -0.1);
+      margin-bottom: calc(max(0px, 2.773115em) * -0.1);
+    }
+    #PBrwVPlpRuy9RZ1I {
+      min-width: 37.66258321rem;
+    }
+    #UCSxEOhDCNhMw3vW {
+      grid-area: 35 / 5 / 37 / 41;
+    }
+    #zshPNScbONFmsCdW {
+      font-size: max(0px, calc(2.773115em - var(--ffsd)));
+    }
+    #CRNU4dKaq76gg8uN {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.773115em) * -0.1);
+      margin-bottom: calc(max(0px, 2.773115em) * -0.1);
+    }
+    #Fl0EG319fl7Uw8IZ {
+      min-width: 7.47781708rem;
+    }
+    #HtLOjoprXiqW4yFd {
+      grid-area: 34 / 27 / 36 / 37;
+    }
+    #rMoDhFdv3jH2VJ6H {
+      grid-area: 38 / 3 / 43 / 16;
+    }
+    #T2epCZKoLQsk3GTm {
+      font-size: max(0px, calc(2.773115em - var(--ffsd)));
+    }
+    #mjNcyVpJP8OANXPD {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.773115em) * -0.1);
+      margin-bottom: calc(max(0px, 2.773115em) * -0.1);
+    }
+    #HBzdALnJO2ilvzrt {
+      min-width: 37.66258321rem;
+    }
+    #iLYH4eCZ8UxCfyjl {
+      grid-area: 46 / 12 / 48 / 42;
+    }
+    #HQHBApJBnwBWwjBK {
+      grid-area: 50 / 4 / 55 / 17;
+    }
+    #bdV80FYr2toPiXsd {
+      grid-area: 56 / 6 / 62 / 36;
+    }
+    #QRVpQO4rMjv0WUUL {
+      font-size: max(0px, calc(2.42648213em - var(--ffsd)));
+    }
+    #Ts7VRCVyUcLsbMQF {
+      transform: translateX(calc(max(0px, 2.42648213em) * 0.05));
+      margin-top: 0;
+      margin-bottom: calc(max(0px, 2.42648213em) * -0.1);
+    }
+    #f4RIbXDDy47UqQbD {
+      min-width: 12.41579388rem;
+    }
+    #SGU2IQ07rpcxoipl {
+      grid-area: 58 / 15 / 60 / 26;
+    }
+    #a1VNjaSTyVzVvaLi {
+      font-size: max(0px, calc(2.94643144em - var(--ffsd)));
+    }
+    #Gqtddn9EXZ7FuIvq {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.94643144em) * -0.1);
+      margin-bottom: calc(max(0px, 2.94643144em) * -0.1);
+    }
+    #Qf3iAiV39j0rGDha {
+      min-width: 71.34655914rem;
+    }
+    #RN60xn6tMIszGJg5 {
+      grid-area: 26 / 10 / 27 / 63;
+    }
+    #HeFsddog6BhSQQk5 {
+      font-size: max(0px, calc(5.19391654em - var(--ffsd)));
+    }
+    #r9dmwUUvLFR3mmwr {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    #ZCEhDvWzdomwEsir {
+      min-width: 71.34655914rem;
+    }
+    #E7DiiyXVJ2VoWlaN {
+      grid-area: 28 / 9 / 29 / 62;
+    }
+    #y5JkAWInql165RAw {
+      font-size: max(0px, calc(2.59981156em - var(--ffsd)));
+    }
+    #AvixsmbHCc47iYqq {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.59981156em) * -0.15);
+      margin-bottom: calc(max(0px, 2.59981156em) * -0.15);
+    }
+    #JpOf58osmdSeNS5j {
+      min-width: 71.34655914rem;
+    }
+    #D92c9W1uZrZQnT4J {
+      grid-area: 30 / 11 / 31 / 64;
+    }
+    #o2Q9gp8ih6Saf1bY {
+      grid-area: 32 / 7 / 33 / 60;
+    }
+    #sof26m44tZmwq98i {
+      grid-area: 44 / 8 / 45 / 61;
+    }
+    #DGdjgqm2p6am48ZP {
+      margin-left: 0%;
+      clip-path: polygon(
+        calc(0% + 0%) calc((0 * 73.86933146rem) + 0%),
+        calc(100% - (0% + 0%)) calc((0 * 73.86933146rem) + 0%),
+        calc(100% - (0% + 0%))
+          calc(100% - ((0.00117353 * 73.86933146rem) + 0%)),
+        calc(0% + 0%) calc(100% - ((0.00117353 * 73.86933146rem) + 0%))
+      );
+      margin-top: 0%;
+      margin-bottom: -0.11735309%;
+      grid-area: 24 / 14 / 64 / 65;
+      margin-right: 0%;
+    }
+    #ef4g83ddK5uAX41m {
+      font-size: max(0px, calc(2.773115em - var(--ffsd)));
+    }
+    #WUiLNBMGEsACZ3yz {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.773115em) * -0.1);
+      margin-bottom: calc(max(0px, 2.773115em) * -0.1);
+    }
+    #jLVtWgFRkwPs6a09 {
+      min-width: 54.52741822rem;
+    }
+    #vUxMrFJ0RUuwUHVZ {
+      grid-area: 39 / 21 / 40 / 58;
+    }
+    #m4E9kMiXHe8vKMm5 {
+      font-size: max(0px, calc(2.42649512em - var(--ffsd)));
+    }
+    #O8OxJ4EDZTmwqTDT {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.42649512em) * -0.15);
+      margin-bottom: calc(max(0px, 2.42649512em) * -0.15);
+    }
+    #rXTgfZzkYNjd4M7g {
+      min-width: 54.52741822rem;
+    }
+    #ETU7H2SWAGyo8igo {
+      grid-area: 41 / 20 / 42 / 57;
+    }
+    #tkaa4PzUYuoxSxjG {
+      font-size: max(0px, calc(2.773115em - var(--ffsd)));
+    }
+    #NYiW2jZFn3cuhNXX {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.773115em) * -0.1);
+      margin-bottom: calc(max(0px, 2.773115em) * -0.1);
+    }
+    #W89gBk2N1RJ79lbr {
+      min-width: 26.02409209rem;
+    }
+    #A2HAfb6WP6wL6bXm {
+      grid-area: 47 / 28 / 49 / 49;
+    }
+    #BqmWr3TnhoKkt8xz {
+      font-size: max(0px, calc(2.773115em - var(--ffsd)));
+    }
+    #ChpIEoEdDFwHUBcX {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.773115em) * -0.1);
+      margin-bottom: calc(max(0px, 2.773115em) * -0.1);
+    }
+    #CqOjJSIoIFIG5d4H {
+      min-width: 52.36651132rem;
+    }
+    #YkIwRBuBmY8fK4Cw {
+      grid-area: 51 / 19 / 52 / 56;
+    }
+    #VvYd5XpjqgdSEHm9 {
+      font-size: max(0px, calc(2.42649512em - var(--ffsd)));
+    }
+    #pniPRtbxVZw8vvdO {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.42649512em) * -0.15);
+      margin-bottom: calc(max(0px, 2.42649512em) * -0.15);
+    }
+    #tebUpcZhodQGLldH {
+      min-width: 52.36651132rem;
+    }
+    #idthndTL7qbsYjtj {
+      grid-area: 53 / 18 / 54 / 55;
+    }
+    #WLYhTDDUi8jxhYdM {
+      grid-area: 57 / 39 / 63 / 54;
+    }
+    #KeRSP3xjtPjrmT3q {
+      font-size: max(0px, calc(2.42648213em - var(--ffsd)));
+    }
+    #M5PWv6gTXQeM4smB {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(max(0px, 2.42648213em) * -0.1);
+    }
+    #xmaqvAy3q9NUchsQ {
+      min-width: 11.56631199rem;
+    }
+    #Oou1pIK1tM6Fc94U {
+      grid-area: 59 / 46 / 61 / 53;
+    }
+    #M3C2NWHGNhyNPdJr {
+      grid-template-columns: 4.16666667rem 4.62836639rem 2.67846905rem 2.8857704rem 0.20932944rem 0 0 0 0 0 0 3.1427711rem 4.25262882rem 1.05757258rem 1.21631595rem 0 1.77748703rem 0 0 0 6.49338301rem 0.01341884rem 0.88867851rem 1.94898026rem 0.01242611rem 1.04025958rem 0 3.22537441rem 0.08026628rem 1.50724877rem 0 2.30773603rem 0.01099892rem 0.27047595rem 0.01061255rem 0 3.57723999rem 1.34685505rem 2.28531094rem 0.92210893rem 0.20932944rem 2.43448931rem 0.47335969rem 0.00744632rem 1.53953143rem 2.37181182rem 1.89058096rem 1.48821113rem 0.40236984rem 1.94898026rem 3.32415326rem 0.07510056rem 7.87157605rem 2.32309295rem 0 2.16090689rem 0 1.8109355rem 3.56142996rem 0 0 0 0 9.9832764rem 4.16666668rem;
+      grid-template-rows: minmax(4.16666667rem, max-content) minmax(
+          35.52483573rem,
+          max-content
+        ) minmax(3.78782264rem, max-content) minmax(
+          5.76388932rem,
+          max-content
+        ) minmax(0.85619731rem, max-content) minmax(
+          0.71747376rem,
+          max-content
+        ) minmax(3.22048958rem, max-content) 0 minmax(
+          8.22381444rem,
+          max-content
+        ) minmax(3.22048958rem, max-content) minmax(
+          1.72409068rem,
+          max-content
+        ) minmax(0.24735187rem, max-content) minmax(
+          0.24735187rem,
+          max-content
+        ) 0 minmax(3.36362475rem, max-content) 0 0 minmax(
+          0.24735187rem,
+          max-content
+        ) minmax(5.99394237rem, max-content) minmax(
+          3.56622393rem,
+          max-content
+        ) minmax(3.22048958rem, max-content) minmax(
+          0.83639554rem,
+          max-content
+        ) minmax(4.16666667rem, max-content) 0 minmax(
+          3.48180935rem,
+          max-content
+        ) minmax(3.44042163rem, max-content) minmax(
+          0.58715234rem,
+          max-content
+        ) minmax(6.10955717rem, max-content) minmax(
+          1.66184527rem,
+          max-content
+        ) minmax(18.71864325rem, max-content) minmax(
+          3.13821955rem,
+          max-content
+        ) minmax(0.25998116rem, max-content) minmax(
+          2.21679385rem,
+          max-content
+        ) 0 minmax(3.21510377rem, max-content) 0 minmax(
+          1.02371469rem,
+          max-content
+        ) minmax(1.18612514rem, max-content) minmax(
+          3.21510377rem,
+          max-content
+        ) minmax(1.41433754rem, max-content) minmax(
+          6.55152384rem,
+          max-content
+        ) minmax(0.2679748rem, max-content) minmax(
+          2.87712501rem,
+          max-content
+        ) minmax(0.25998116rem, max-content) minmax(
+          6.36579715rem,
+          max-content
+        ) 0 minmax(3.21510377rem, max-content) 0 minmax(
+          1.03992462rem,
+          max-content
+        ) minmax(1.55988694rem, max-content) minmax(
+          3.21510377rem,
+          max-content
+        ) minmax(1.41433754rem, max-content) minmax(
+          2.91178765rem,
+          max-content
+        ) minmax(3.66327238rem, max-content) minmax(
+          1.47320007rem,
+          max-content
+        ) 0 minmax(2.05391068rem, max-content) 0 minmax(
+          2.89445861rem,
+          max-content
+        ) 0 minmax(1.75366394rem, max-content) 0 minmax(
+          8.56021567rem,
+          max-content
+        ) 0 minmax(4.16666667rem, max-content);
+    }
+    #hSeTxkXmfpms9Bqd {
+      min-height: 55.98409721vh;
+    }
+    #FlTtMyfOjefd9Mwr {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    #u89dv1QbGlxkSVra {
+      grid-template-columns: 0 281.98952132%;
+      left: -90.99476066%;
+      grid-template-rows: 0 100%;
+    }
+    #Q0HMUxI6Gl1ZFZSn {
+      grid-area: 4 / 6 / 6 / 15;
+    }
+    #QBYInwH5eCRM4oKK {
+      grid-area: 2 / 7 / 8 / 30;
+    }
+    #Ff9V0kJHqVuccH7x {
+      font-size: max(0px, calc(7.14971574em - var(--ffsd)));
+    }
+    #PgcmwowcKoh1OOkq {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(max(0px, 7.14971574em) * 0.1);
+    }
+    #SdhLmEWQOn9Yaqm4 {
+      min-width: 44.36957682rem;
+    }
+    #S43ncS0xEjKDvkg4 {
+      grid-area: 5 / 9 / 7 / 29;
+    }
+    #nvIYmZiB6yweZa75 {
+      grid-area: 3 / 8 / 9 / 31;
+    }
+    #pgEA5W13hYS4hnoD {
+      grid-area: 10 / 12 / 11 / 26;
+    }
+    #qGOfP0Kw8YxMD6n1 {
+      grid-area: 12 / 2 / 18 / 19;
+    }
+    #euKLKtgOd6wszxoe {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(3.48958165em - var(--ffsd))
+      );
+    }
+    #jALOQVUPF5DJZ2kd {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 3.48958165em) * 0.1
+      );
+    }
+    #QPsLM8k8j9TwAH7J {
+      min-width: 37.58159022rem;
+    }
+    #jqm6AFef6gDiuS9j {
+      grid-area: 14 / 5 / 16 / 18;
+    }
+    #UIfvzQ3J7VKJFAWU {
+      grid-area: 13 / 20 / 19 / 34;
+    }
+    #bDxd2lKSBdCunfQm {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(3.48958165em - var(--ffsd))
+      );
+    }
+    #Z1XmDk3jzmbD9zIO {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 3.48958165em) * 0.1
+      );
+    }
+    #uHnjb1dsvyaFSqfK {
+      min-width: 34.52502633rem;
+    }
+    #BVgnLi45KCCLX13p {
+      grid-area: 15 / 22 / 17 / 32;
+    }
+    #QVzoUjui6T0XVPr9 {
+      grid-area: 20 / 3 / 26 / 17;
+    }
+    #SzpLW1A4e8EQCd07 {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(3.48958165em - var(--ffsd))
+      );
+    }
+    #I2N3MKwUv82F2f7d {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 3.48958165em) * 0.1
+      );
+    }
+    #huSgACAXKRXRXVkZ {
+      min-width: 34.52502633rem;
+    }
+    #V6Hrsln7DhO4CegU {
+      grid-area: 22 / 4 / 24 / 16;
+    }
+    #UtJAjzKHb718kJs7 {
+      grid-area: 21 / 21 / 27 / 35;
+    }
+    #vz2hhGzmZYQz0U78 {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(3.48958165em - var(--ffsd))
+      );
+    }
+    #SnKqmuFxepGFKILR {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 3.48958165em) * 0.1
+      );
+    }
+    #W9gg8yeJxDusBG8K {
+      min-width: 34.52502633rem;
+    }
+    #fZA7z5BSYY3sBknL {
+      grid-area: 23 / 23 / 25 / 33;
+    }
+    #tIV5Q5TcrreORdau {
+      grid-area: 28 / 10 / 31 / 27;
+    }
+    #SKMfkNagUgikczYJ {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(3.48958165em - var(--ffsd))
+      );
+    }
+    #E3n1oZ79QC1P54So {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 3.48958165em) * 0.1
+      );
+    }
+    #vIwmDmIOV92hDY8v {
+      min-width: 34.52502633rem;
+    }
+    #Jt2fdu4tnJ5hl1pc {
+      grid-area: 29 / 13 / 30 / 24;
+    }
+    #aGfMZoDCy7y4KOx6 {
+      grid-area: 32 / 11 / 35 / 28;
+    }
+    #uLbVLAZ3xVvv2eE9 {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(3.48958165em - var(--ffsd))
+      );
+    }
+    #ZOKPQMz92mstqqLn {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 3.48958165em) * 0.1
+      );
+    }
+    #dDCshLUMNq1Bp9Ea {
+      min-width: 34.52502633rem;
+    }
+    #twAZeU6a7rTHC01N {
+      grid-area: 33 / 14 / 34 / 25;
+    }
+    #Rv36pyGhY2Mi8Dvz {
+      grid-template-columns: 8.2615956rem 0.04087006rem 2.3046057rem 0.16354638rem 11.05290191rem 2.57576269rem 1.13385789rem 3.2565508rem 1.67574218rem 0 0.28673066rem 2.01787505rem 0 8.91307056rem 3.38388405rem 2.3046057rem 0.91550456rem 2.50902214rem 1.8731449rem 0 2.3046057rem 0 12.25608454rem 0 2.01787505rem 0.28673066rem 0 3.5595969rem 3.94845878rem 1.13385789rem 11.25731835rem 0 2.3046057rem 0 8.2615956rem;
+      grid-template-rows: minmax(4.16666667rem, max-content) minmax(
+          1.17915862rem,
+          max-content
+        ) minmax(2.58751994rem, max-content) minmax(
+          0.48301916rem,
+          max-content
+        ) minmax(14.285294rem, max-content) minmax(
+          1.44408062rem,
+          max-content
+        ) minmax(4.8262877rem, max-content) minmax(
+          1.17915862rem,
+          max-content
+        ) minmax(4.16666667rem, max-content) minmax(
+          38.28569586rem,
+          max-content
+        ) minmax(8.95508187rem, max-content) 0 minmax(
+          3.36313235rem,
+          max-content
+        ) 0 minmax(4.18749798rem, max-content) 0 minmax(
+          4.6826886rem,
+          max-content
+        ) 0 minmax(6.4608685rem, max-content) 0 minmax(
+          3.36313235rem,
+          max-content
+        ) 0 minmax(4.18749798rem, max-content) 0 minmax(
+          4.6826886rem,
+          max-content
+        ) 0 minmax(4.16666667rem, max-content) minmax(
+          3.36313235rem,
+          max-content
+        ) minmax(4.18749798rem, max-content) minmax(
+          4.6826886rem,
+          max-content
+        ) minmax(6.4608685rem, max-content) minmax(
+          3.36313235rem,
+          max-content
+        ) minmax(4.18749798rem, max-content) minmax(
+          4.6826886rem,
+          max-content
+        ) minmax(4.16666667rem, max-content);
+    }
+    #MKQebh2JK1V4cpdL {
+      min-height: 44.01590279vh;
+    }
+  }
+  @media (min-width: 768.05px) and (max-width: 1024px) {
+    #yp8Ocny1xglCJelb {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    #TaZzWztm7ekwEQNI {
+      grid-template-columns: 0 257.69243389%;
+      left: -78.84621695%;
+      grid-template-rows: 0 100%;
+    }
+    #xToEDWfangBCAhne {
+      grid-area: 2 / 23 / 3 / 52;
+    }
+    #utdmLtrfy2vAYCGq {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(3.64583008em - var(--ffsd))
+      );
+    }
+    #NVi9VYdAKhdkTtob {
+      transform: translateX(0);
+      margin-top: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 3.64583008em) * -0.05
+      );
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 3.64583008em) * -0.05
+      );
+    }
+    #AeZAXGdET8CKT0aj {
+      min-width: 48.48176856rem;
+    }
+    #M4xSAVuaGTBpDCqi {
+      grid-area: 4 / 13 / 5 / 59;
+    }
+    #uGqqR9qUsioL1d4a {
+      grid-area: 6 / 32 / 8 / 35;
+    }
+    #QkqEA4txuXvlDdU1 {
+      font-size: max(0px, calc(2.08332031em - var(--ffsd)));
+    }
+    #eujoEsjSpiYpxoaS {
+      transform: translateX(calc(max(0px, 2.08332031em) * 0.05));
+      margin-top: calc(max(0px, 2.08332031em) * -0.1);
+      margin-bottom: calc(max(0px, 2.08332031em) * -0.1);
+    }
+    #n0xtX4voE7YJrShQ {
+      min-width: 8.34939393rem;
+    }
+    #DeCEH8sgaxWJkuQa {
+      grid-area: 7 / 33 / 9 / 43;
+    }
+    #WpdPqZRiK2L2oKcd {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(2.08332031em - var(--ffsd))
+      );
+    }
+    #w4RoSitZX2n0IKSJ {
+      transform: translateX(
+        calc(
+          max(calc(12px * var(--rfso, var(--bfso, 1))), 2.08332031em) * 0.05
+        )
+      );
+      margin-top: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 2.08332031em) * -0.1
+      );
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 2.08332031em) * -0.1
+      );
+    }
+    #JRhI1m12AI0ReOfK {
+      min-width: 23.5328311rem;
+    }
+    #dw36GitbxQvSqt9K {
+      grid-area: 10 / 24 / 11 / 51;
+    }
+    #SLoQA6YMqO0mLiNe {
+      grid-area: 15 / 26 / 18 / 29;
+    }
+    #uZMMckQ6hwig3TaU {
+      grid-area: 13 / 34 / 19 / 38;
+    }
+    #BKUPXAJN7a71E6JQ {
+      grid-area: 14 / 40 / 17 / 44;
+    }
+    #R9h2aXKgKiRp1Smi {
+      grid-area: 12 / 47 / 16 / 50;
+    }
+    #cCzY1REnnsnONpHO {
+      grid-area: 20 / 22 / 23 / 31;
+    }
+    #tcwn81OU5Ekr6lSU {
+      font-size: max(0px, calc(2.08332031em - var(--ffsd)));
+    }
+    #WxgebV3uGVlCpeuV {
+      transform: translateX(calc(max(0px, 2.08332031em) * 0.05));
+      margin-top: calc(max(0px, 2.08332031em) * -0.1);
+      margin-bottom: calc(max(0px, 2.08332031em) * -0.1);
+    }
+    #DwAsKwoUs2D3k0Sn {
+      min-width: 15.9226802rem;
+    }
+    #ZoTyloFygld0GH9L {
+      grid-area: 21 / 30 / 22 / 48;
+    }
+    #rcXUeIL9r0XogVT1 {
+      grid-area: 25 / 2 / 65 / 45;
+    }
+    #zwzywtwfjGUtsjVm {
+      font-size: max(0px, calc(2.08332031em - var(--ffsd)));
+    }
+    #hUgEtbVOBnsSe4B5 {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.08332031em) * -0.1);
+      margin-bottom: calc(max(0px, 2.08332031em) * -0.1);
+    }
+    #PBrwVPlpRuy9RZ1I {
+      min-width: 28.2941738rem;
+    }
+    #UCSxEOhDCNhMw3vW {
+      grid-area: 35 / 5 / 37 / 41;
+    }
+    #zshPNScbONFmsCdW {
+      font-size: max(0px, calc(2.08332031em - var(--ffsd)));
+    }
+    #CRNU4dKaq76gg8uN {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.08332031em) * -0.1);
+      margin-bottom: calc(max(0px, 2.08332031em) * -0.1);
+    }
+    #Fl0EG319fl7Uw8IZ {
+      min-width: 5.61767593rem;
+    }
+    #HtLOjoprXiqW4yFd {
+      grid-area: 34 / 27 / 36 / 37;
+    }
+    #rMoDhFdv3jH2VJ6H {
+      grid-area: 38 / 3 / 43 / 16;
+    }
+    #T2epCZKoLQsk3GTm {
+      font-size: max(0px, calc(2.08332031em - var(--ffsd)));
+    }
+    #mjNcyVpJP8OANXPD {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.08332031em) * -0.1);
+      margin-bottom: calc(max(0px, 2.08332031em) * -0.1);
+    }
+    #HBzdALnJO2ilvzrt {
+      min-width: 28.2941738rem;
+    }
+    #iLYH4eCZ8UxCfyjl {
+      grid-area: 46 / 12 / 48 / 42;
+    }
+    #HQHBApJBnwBWwjBK {
+      grid-area: 50 / 4 / 55 / 17;
+    }
+    #bdV80FYr2toPiXsd {
+      grid-area: 56 / 6 / 62 / 36;
+    }
+    #QRVpQO4rMjv0WUUL {
+      font-size: max(0px, calc(1.82291016em - var(--ffsd)));
+    }
+    #Ts7VRCVyUcLsbMQF {
+      transform: translateX(calc(max(0px, 1.82291016em) * 0.05));
+      margin-top: 0;
+      margin-bottom: calc(max(0px, 1.82291016em) * -0.1);
+    }
+    #f4RIbXDDy47UqQbD {
+      min-width: 9.32736246rem;
+    }
+    #SGU2IQ07rpcxoipl {
+      grid-area: 58 / 15 / 60 / 25;
+    }
+    #a1VNjaSTyVzVvaLi {
+      font-size: max(0px, calc(2.21352539em - var(--ffsd)));
+    }
+    #Gqtddn9EXZ7FuIvq {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.21352539em) * -0.1);
+      margin-bottom: calc(max(0px, 2.21352539em) * -0.1);
+    }
+    #Qf3iAiV39j0rGDha {
+      min-width: 53.59947532rem;
+    }
+    #RN60xn6tMIszGJg5 {
+      grid-area: 26 / 10 / 27 / 63;
+    }
+    #HeFsddog6BhSQQk5 {
+      font-size: max(0px, calc(3.90196289em - var(--ffsd)));
+    }
+    #r9dmwUUvLFR3mmwr {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    #ZCEhDvWzdomwEsir {
+      min-width: 53.59947532rem;
+    }
+    #E7DiiyXVJ2VoWlaN {
+      grid-area: 28 / 9 / 29 / 62;
+    }
+    #y5JkAWInql165RAw {
+      font-size: max(0px, calc(1.953125em - var(--ffsd)));
+    }
+    #AvixsmbHCc47iYqq {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 1.953125em) * -0.15);
+      margin-bottom: calc(max(0px, 1.953125em) * -0.15);
+    }
+    #JpOf58osmdSeNS5j {
+      min-width: 53.59947532rem;
+    }
+    #D92c9W1uZrZQnT4J {
+      grid-area: 30 / 11 / 31 / 64;
+    }
+    #o2Q9gp8ih6Saf1bY {
+      grid-area: 32 / 7 / 33 / 60;
+    }
+    #sof26m44tZmwq98i {
+      grid-area: 44 / 8 / 45 / 61;
+    }
+    #DGdjgqm2p6am48ZP {
+      margin-left: 0%;
+      clip-path: polygon(
+        calc(0% + 0%) calc((0 * 55.4948059rem) + 0%),
+        calc(100% - (0% + 0%)) calc((0 * 55.4948059rem) + 0%),
+        calc(100% - (0% + 0%))
+          calc(100% - ((0.00117353 * 55.4948059rem) + 0%)),
+        calc(0% + 0%) calc(100% - ((0.00117353 * 55.4948059rem) + 0%))
+      );
+      margin-top: 0%;
+      margin-bottom: -0.11735309%;
+      grid-area: 24 / 14 / 64 / 65;
+      margin-right: 0%;
+    }
+    #ef4g83ddK5uAX41m {
+      font-size: max(0px, calc(2.08332031em - var(--ffsd)));
+    }
+    #WUiLNBMGEsACZ3yz {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.08332031em) * -0.1);
+      margin-bottom: calc(max(0px, 2.08332031em) * -0.1);
+    }
+    #jLVtWgFRkwPs6a09 {
+      min-width: 40.96398854rem;
+    }
+    #vUxMrFJ0RUuwUHVZ {
+      grid-area: 39 / 21 / 40 / 58;
+    }
+    #m4E9kMiXHe8vKMm5 {
+      font-size: max(0px, calc(1.82291992em - var(--ffsd)));
+    }
+    #O8OxJ4EDZTmwqTDT {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 1.82291992em) * -0.15);
+      margin-bottom: calc(max(0px, 1.82291992em) * -0.15);
+    }
+    #rXTgfZzkYNjd4M7g {
+      min-width: 40.96398854rem;
+    }
+    #ETU7H2SWAGyo8igo {
+      grid-area: 41 / 20 / 42 / 57;
+    }
+    #tkaa4PzUYuoxSxjG {
+      font-size: max(0px, calc(2.08332031em - var(--ffsd)));
+    }
+    #NYiW2jZFn3cuhNXX {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.08332031em) * -0.1);
+      margin-bottom: calc(max(0px, 2.08332031em) * -0.1);
+    }
+    #W89gBk2N1RJ79lbr {
+      min-width: 19.55068319rem;
+    }
+    #A2HAfb6WP6wL6bXm {
+      grid-area: 47 / 28 / 49 / 49;
+    }
+    #BqmWr3TnhoKkt8xz {
+      font-size: max(0px, calc(2.08332031em - var(--ffsd)));
+    }
+    #ChpIEoEdDFwHUBcX {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 2.08332031em) * -0.1);
+      margin-bottom: calc(max(0px, 2.08332031em) * -0.1);
+    }
+    #CqOjJSIoIFIG5d4H {
+      min-width: 39.34059347rem;
+    }
+    #YkIwRBuBmY8fK4Cw {
+      grid-area: 51 / 19 / 52 / 56;
+    }
+    #VvYd5XpjqgdSEHm9 {
+      font-size: max(0px, calc(1.82291992em - var(--ffsd)));
+    }
+    #pniPRtbxVZw8vvdO {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 1.82291992em) * -0.15);
+      margin-bottom: calc(max(0px, 1.82291992em) * -0.15);
+    }
+    #tebUpcZhodQGLldH {
+      min-width: 39.34059347rem;
+    }
+    #idthndTL7qbsYjtj {
+      grid-area: 53 / 18 / 54 / 55;
+    }
+    #WLYhTDDUi8jxhYdM {
+      grid-area: 57 / 39 / 63 / 54;
+    }
+    #KeRSP3xjtPjrmT3q {
+      font-size: max(0px, calc(1.82291016em - var(--ffsd)));
+    }
+    #M5PWv6gTXQeM4smB {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(max(0px, 1.82291016em) * -0.1);
+    }
+    #xmaqvAy3q9NUchsQ {
+      min-width: 8.68918378rem;
+    }
+    #Oou1pIK1tM6Fc94U {
+      grid-area: 59 / 46 / 61 / 53;
+    }
+    #M3C2NWHGNhyNPdJr {
+      grid-template-columns: 15.56741633rem 3.47708974rem 2.01221694rem 2.1679534rem 0.15726008rem 0 0 0 0 0 0 2.40159331rem 3.154248rem 0.79450814rem 0.9137651rem 0 1.33534845rem 0 0 0 4.90017084rem 0.01006413rem 0.66650888rem 1.45267692rem 0.00905828rem 0.77244336rem 0 2.43610172rem 0.06019971rem 1.13043658rem 0 1.73080202rem 0.00824919rem 0.20285696rem 0.00020162rem 0 2.69068779rem 1.00856999rem 1.7155545rem 0.69404011rem 0.15726008rem 1.82314558rem 0.35501976rem 0.01196884rem 1.15658279rem 1.77054055rem 1.41793572rem 1.13170156rem 0.28623416rem 1.4617352rem 2.49311494rem 0.07909353rem 5.91357166rem 1.74523838rem 0 1.62339507rem 0 1.31991033rem 2.71611346rem 0 0 0 0 7.5rem 15.56741633rem;
+      grid-template-rows: minmax(3.125rem, max-content) minmax(
+          26.6436268rem,
+          max-content
+        ) minmax(2.84086698rem, max-content) minmax(
+          4.32291699rem,
+          max-content
+        ) minmax(0.64214799rem, max-content) minmax(
+          0.53810532rem,
+          max-content
+        ) minmax(2.41536719rem, max-content) 0 minmax(
+          6.16786083rem,
+          max-content
+        ) minmax(2.41536719rem, max-content) minmax(
+          1.29306801rem,
+          max-content
+        ) minmax(0.1855139rem, max-content) minmax(
+          0.1855139rem,
+          max-content
+        ) 0 minmax(2.52271856rem, max-content) 0 0 minmax(
+          0.1855139rem,
+          max-content
+        ) minmax(4.49545678rem, max-content) minmax(
+          2.67466795rem,
+          max-content
+        ) minmax(2.41536719rem, max-content) minmax(
+          0.62729666rem,
+          max-content
+        ) minmax(3.125rem, max-content) 0 minmax(2.61573146rem, max-content) minmax(
+          2.58463867rem,
+          max-content
+        ) minmax(0.44110194rem, max-content) minmax(
+          4.58984375rem,
+          max-content
+        ) minmax(1.24847185rem, max-content) minmax(14.0625rem, max-content) minmax(
+          2.35760743rem,
+          max-content
+        ) minmax(0.1953125rem, max-content) minmax(
+          1.6653805rem,
+          max-content
+        ) 0 minmax(2.41536719rem, max-content) 0 minmax(
+          0.76907218rem,
+          max-content
+        ) minmax(0.89108407rem, max-content) minmax(
+          2.41536719rem,
+          max-content
+        ) minmax(1.06253009rem, max-content) minmax(
+          4.92187402rem,
+          max-content
+        ) minmax(0.20131777rem, max-content) minmax(
+          2.1614585rem,
+          max-content
+        ) minmax(0.1953125rem, max-content) minmax(
+          4.78234567rem,
+          max-content
+        ) 0 minmax(2.41536719rem, max-content) 0 minmax(
+          0.78125rem,
+          max-content
+        ) minmax(1.171875rem, max-content) minmax(
+          2.41536719rem,
+          max-content
+        ) minmax(1.06253009rem, max-content) minmax(
+          2.18749902rem,
+          max-content
+        ) minmax(2.75205671rem, max-content) minmax(
+          1.10675094rem,
+          max-content
+        ) 0 minmax(1.54301348rem, max-content) 0 minmax(
+          2.17448047rem,
+          max-content
+        ) 0 minmax(1.31745121rem, max-content) 0 minmax(
+          6.43091656rem,
+          max-content
+        ) 0 minmax(3.125rem, max-content);
+    }
+    #hSeTxkXmfpms9Bqd {
+      min-height: 61.37005291vh;
+    }
+    #FlTtMyfOjefd9Mwr {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    #u89dv1QbGlxkSVra {
+      grid-template-columns: 0 169.46996093%;
+      left: -34.73498046%;
+      grid-template-rows: 0 100%;
+    }
+    #Q0HMUxI6Gl1ZFZSn {
+      grid-area: 5 / 2 / 7 / 9;
+    }
+    #QBYInwH5eCRM4oKK {
+      grid-area: 3 / 3 / 9 / 17;
+    }
+    #Ff9V0kJHqVuccH7x {
+      font-size: max(0px, calc(5.3622868em - var(--ffsd)));
+    }
+    #PgcmwowcKoh1OOkq {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(max(0px, 5.3622868em) * 0.1);
+    }
+    #SdhLmEWQOn9Yaqm4 {
+      min-width: 33.27718261rem;
+    }
+    #S43ncS0xEjKDvkg4 {
+      grid-area: 6 / 5 / 8 / 15;
+    }
+    #nvIYmZiB6yweZa75 {
+      grid-area: 4 / 4 / 10 / 18;
+    }
+    #pgEA5W13hYS4hnoD {
+      grid-area: 2 / 30 / 11 / 35;
+    }
+    #qGOfP0Kw8YxMD6n1 {
+      grid-area: 12 / 6 / 18 / 21;
+    }
+    #euKLKtgOd6wszxoe {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(2.61718624em - var(--ffsd))
+      );
+    }
+    #jALOQVUPF5DJZ2kd {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 2.61718624em) * 0.1
+      );
+    }
+    #QPsLM8k8j9TwAH7J {
+      min-width: 28.18619266rem;
+    }
+    #jqm6AFef6gDiuS9j {
+      grid-area: 14 / 10 / 16 / 20;
+    }
+    #UIfvzQ3J7VKJFAWU {
+      grid-area: 13 / 22 / 19 / 33;
+    }
+    #bDxd2lKSBdCunfQm {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(2.61718624em - var(--ffsd))
+      );
+    }
+    #Z1XmDk3jzmbD9zIO {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 2.61718624em) * 0.1
+      );
+    }
+    #uHnjb1dsvyaFSqfK {
+      min-width: 25.89376975rem;
+    }
+    #BVgnLi45KCCLX13p {
+      grid-area: 15 / 24 / 17 / 31;
+    }
+    #QVzoUjui6T0XVPr9 {
+      grid-area: 20 / 7 / 26 / 19;
+    }
+    #SzpLW1A4e8EQCd07 {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(2.61718624em - var(--ffsd))
+      );
+    }
+    #I2N3MKwUv82F2f7d {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 2.61718624em) * 0.1
+      );
+    }
+    #huSgACAXKRXRXVkZ {
+      min-width: 25.89376975rem;
+    }
+    #V6Hrsln7DhO4CegU {
+      grid-area: 22 / 8 / 24 / 16;
+    }
+    #UtJAjzKHb718kJs7 {
+      grid-area: 21 / 23 / 27 / 34;
+    }
+    #vz2hhGzmZYQz0U78 {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(2.61718624em - var(--ffsd))
+      );
+    }
+    #SnKqmuFxepGFKILR {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 2.61718624em) * 0.1
+      );
+    }
+    #W9gg8yeJxDusBG8K {
+      min-width: 25.89376975rem;
+    }
+    #fZA7z5BSYY3sBknL {
+      grid-area: 23 / 25 / 25 / 32;
+    }
+    #tIV5Q5TcrreORdau {
+      grid-area: 28 / 11 / 31 / 28;
+    }
+    #SKMfkNagUgikczYJ {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(2.61718624em - var(--ffsd))
+      );
+    }
+    #E3n1oZ79QC1P54So {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 2.61718624em) * 0.1
+      );
+    }
+    #vIwmDmIOV92hDY8v {
+      min-width: 25.89376975rem;
+    }
+    #Jt2fdu4tnJ5hl1pc {
+      grid-area: 29 / 13 / 30 / 26;
+    }
+    #aGfMZoDCy7y4KOx6 {
+      grid-area: 32 / 12 / 35 / 29;
+    }
+    #uLbVLAZ3xVvv2eE9 {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(2.61718624em - var(--ffsd))
+      );
+    }
+    #ZOKPQMz92mstqqLn {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 2.61718624em) * 0.1
+      );
+    }
+    #dDCshLUMNq1Bp9Ea {
+      min-width: 25.89376975rem;
+    }
+    #twAZeU6a7rTHC01N {
+      grid-area: 33 / 14 / 34 / 27;
+    }
+    #Rv36pyGhY2Mi8Dvz {
+      grid-template-columns: 5.60125499rem 1.93182202rem 0.85039342rem 2.4424131rem 7.87031317rem 0.03065255rem 1.72845428rem 0.04064383rem 0.08201595rem 14.77111161rem 0 1.72845428rem 0 6.97670882rem 2.24600713rem 0.71533695rem 0.85039342rem 0.16272391rem 0.68662842rem 1.88176661rem 1.40485867rem 0 1.72845428rem 0 9.19206341rem 0 1.72845428rem 0 0.87606573rem 14.0483582rem 0 1.72845428rem 0 13.09494171rem 5.60125499rem;
+      grid-template-rows: minmax(3.125rem, max-content) minmax(
+          5.69339793rem,
+          max-content
+        ) minmax(0.88436897rem, max-content) minmax(
+          1.94063995rem,
+          max-content
+        ) minmax(0.36226437rem, max-content) minmax(
+          10.7139705rem,
+          max-content
+        ) minmax(1.08306047rem, max-content) minmax(
+          3.61971578rem,
+          max-content
+        ) minmax(0.88436897rem, max-content) minmax(
+          3.53248496rem,
+          max-content
+        ) minmax(6.7163114rem, max-content) 0 minmax(
+          2.52234926rem,
+          max-content
+        ) 0 minmax(3.14062349rem, max-content) 0 minmax(
+          3.51201645rem,
+          max-content
+        ) 0 minmax(4.84565137rem, max-content) 0 minmax(
+          2.52234926rem,
+          max-content
+        ) 0 minmax(3.14062349rem, max-content) 0 minmax(
+          3.51201645rem,
+          max-content
+        ) 0 minmax(3.125rem, max-content) minmax(2.52234926rem, max-content) minmax(
+          3.14062349rem,
+          max-content
+        ) minmax(3.51201645rem, max-content) minmax(
+          4.84565137rem,
+          max-content
+        ) minmax(2.52234926rem, max-content) minmax(
+          3.14062349rem,
+          max-content
+        ) minmax(3.51201645rem, max-content) minmax(3.125rem, max-content);
+    }
+    #MKQebh2JK1V4cpdL {
+      min-height: 38.62994709vh;
+    }
+  }
+  @media (min-width: 1024.05px) {
+    #yp8Ocny1xglCJelb {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    #TaZzWztm7ekwEQNI {
+      grid-template-columns: 0 100%;
+      grid-template-rows: 0 100%;
+    }
+    #xToEDWfangBCAhne {
+      grid-area: 8 / 4 / 21 / 22;
+    }
+    #utdmLtrfy2vAYCGq {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(2.73303807em - var(--ffsd))
+      );
+    }
+    #NVi9VYdAKhdkTtob {
+      transform: translateX(0);
+      margin-top: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 2.73303807em) * -0.05
+      );
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 2.73303807em) * -0.05
+      );
+    }
+    #AeZAXGdET8CKT0aj {
+      min-width: 36.34358053rem;
+    }
+    #M4xSAVuaGTBpDCqi {
+      grid-area: 22 / 2 / 25 / 23;
+    }
+    #uGqqR9qUsioL1d4a {
+      grid-area: 28 / 10 / 30 / 13;
+    }
+    #QkqEA4txuXvlDdU1 {
+      font-size: max(0px, calc(1.56172767em - var(--ffsd)));
+    }
+    #eujoEsjSpiYpxoaS {
+      transform: translateX(calc(max(0px, 1.56172767em) * 0.05));
+      margin-top: calc(max(0px, 1.56172767em) * -0.1);
+      margin-bottom: calc(max(0px, 1.56172767em) * -0.1);
+    }
+    #n0xtX4voE7YJrShQ {
+      min-width: 6.2589893rem;
+    }
+    #DeCEH8sgaxWJkuQa {
+      grid-area: 29 / 11 / 31 / 16;
+    }
+    #WpdPqZRiK2L2oKcd {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(1.56172767em - var(--ffsd))
+      );
+    }
+    #w4RoSitZX2n0IKSJ {
+      transform: translateX(
+        calc(
+          max(calc(12px * var(--rfso, var(--bfso, 1))), 1.56172767em) * 0.05
+        )
+      );
+      margin-top: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 1.56172767em) * -0.1
+      );
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 1.56172767em) * -0.1
+      );
+    }
+    #JRhI1m12AI0ReOfK {
+      min-width: 17.64100955rem;
+    }
+    #dw36GitbxQvSqt9K {
+      grid-area: 38 / 5 / 40 / 21;
+    }
+    #SLoQA6YMqO0mLiNe {
+      grid-area: 45 / 6 / 49 / 7;
+    }
+    #uZMMckQ6hwig3TaU {
+      grid-area: 43 / 12 / 50 / 14;
+    }
+    #BKUPXAJN7a71E6JQ {
+      grid-area: 44 / 15 / 48 / 17;
+    }
+    #R9h2aXKgKiRp1Smi {
+      grid-area: 42 / 18 / 47 / 20;
+    }
+    #cCzY1REnnsnONpHO {
+      grid-area: 56 / 3 / 63 / 9;
+    }
+    #tcwn81OU5Ekr6lSU {
+      font-size: max(0px, calc(1.56172767em - var(--ffsd)));
+    }
+    #WxgebV3uGVlCpeuV {
+      transform: translateX(calc(max(0px, 1.56172767em) * 0.05));
+      margin-top: calc(max(0px, 1.56172767em) * -0.1);
+      margin-bottom: calc(max(0px, 1.56172767em) * -0.1);
+    }
+    #DwAsKwoUs2D3k0Sn {
+      min-width: 11.93618194rem;
+    }
+    #ZoTyloFygld0GH9L {
+      grid-area: 59 / 8 / 62 / 19;
+    }
+    #rcXUeIL9r0XogVT1 {
+      grid-area: 3 / 24 / 65 / 51;
+    }
+    #zwzywtwfjGUtsjVm {
+      font-size: max(0px, calc(1.56172767em - var(--ffsd)));
+    }
+    #hUgEtbVOBnsSe4B5 {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 1.56172767em) * -0.1);
+      margin-bottom: calc(max(0px, 1.56172767em) * -0.1);
+    }
+    #PBrwVPlpRuy9RZ1I {
+      min-width: 21.21027377rem;
+    }
+    #UCSxEOhDCNhMw3vW {
+      grid-area: 14 / 27 / 16 / 49;
+    }
+    #zshPNScbONFmsCdW {
+      font-size: max(0px, calc(1.56172767em - var(--ffsd)));
+    }
+    #CRNU4dKaq76gg8uN {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 1.56172767em) * -0.1);
+      margin-bottom: calc(max(0px, 1.56172767em) * -0.1);
+    }
+    #Fl0EG319fl7Uw8IZ {
+      min-width: 4.2112007rem;
+    }
+    #HtLOjoprXiqW4yFd {
+      grid-area: 13 / 44 / 15 / 47;
+    }
+    #rMoDhFdv3jH2VJ6H {
+      grid-area: 17 / 25 / 24 / 37;
+    }
+    #T2epCZKoLQsk3GTm {
+      font-size: max(0px, calc(1.56172767em - var(--ffsd)));
+    }
+    #mjNcyVpJP8OANXPD {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 1.56172767em) * -0.1);
+      margin-bottom: calc(max(0px, 1.56172767em) * -0.1);
+    }
+    #HBzdALnJO2ilvzrt {
+      min-width: 21.21027377rem;
+    }
+    #iLYH4eCZ8UxCfyjl {
+      grid-area: 32 / 34 / 34 / 50;
+    }
+    #HQHBApJBnwBWwjBK {
+      grid-area: 36 / 26 / 51 / 38;
+    }
+    #bdV80FYr2toPiXsd {
+      grid-area: 52 / 28 / 60 / 46;
+    }
+    #QRVpQO4rMjv0WUUL {
+      font-size: max(0px, calc(1.36651537em - var(--ffsd)));
+    }
+    #Ts7VRCVyUcLsbMQF {
+      transform: translateX(calc(max(0px, 1.36651537em) * 0.05));
+      margin-top: 0;
+      margin-bottom: calc(max(0px, 1.36651537em) * -0.1);
+    }
+    #f4RIbXDDy47UqQbD {
+      min-width: 6.99210773rem;
+    }
+    #SGU2IQ07rpcxoipl {
+      grid-area: 54 / 36 / 57 / 43;
+    }
+    #a1VNjaSTyVzVvaLi {
+      font-size: max(0px, calc(1.65933382em - var(--ffsd)));
+    }
+    #Gqtddn9EXZ7FuIvq {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 1.65933382em) * -0.1);
+      margin-bottom: calc(max(0px, 1.65933382em) * -0.1);
+    }
+    #Qf3iAiV39j0rGDha {
+      min-width: 40.17998736rem;
+    }
+    #RN60xn6tMIszGJg5 {
+      grid-area: 4 / 32 / 5 / 63;
+    }
+    #HeFsddog6BhSQQk5 {
+      font-size: max(0px, calc(2.92504392em - var(--ffsd)));
+    }
+    #r9dmwUUvLFR3mmwr {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    #ZCEhDvWzdomwEsir {
+      min-width: 40.17998736rem;
+    }
+    #E7DiiyXVJ2VoWlaN {
+      grid-area: 6 / 31 / 7 / 62;
+    }
+    #y5JkAWInql165RAw {
+      font-size: max(0px, calc(1.46412884em - var(--ffsd)));
+    }
+    #AvixsmbHCc47iYqq {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 1.46412884em) * -0.15);
+      margin-bottom: calc(max(0px, 1.46412884em) * -0.15);
+    }
+    #JpOf58osmdSeNS5j {
+      min-width: 40.17998736rem;
+    }
+    #D92c9W1uZrZQnT4J {
+      grid-area: 9 / 33 / 10 / 64;
+    }
+    #o2Q9gp8ih6Saf1bY {
+      grid-area: 11 / 29 / 12 / 60;
+    }
+    #sof26m44tZmwq98i {
+      grid-area: 26 / 30 / 27 / 61;
+    }
+    #DGdjgqm2p6am48ZP {
+      margin-left: 0%;
+      clip-path: polygon(
+        calc(0% + 0%) calc((0 * 41.60079154rem) + 0%),
+        calc(100% - (0% + 0%)) calc((0 * 41.60079154rem) + 0%),
+        calc(100% - (0% + 0%))
+          calc(100% - ((0.00117353 * 41.60079154rem) + 0%)),
+        calc(0% + 0%) calc(100% - ((0.00117353 * 41.60079154rem) + 0%))
+      );
+      margin-top: 0%;
+      margin-bottom: -0.11735309%;
+      grid-area: 2 / 35 / 64 / 65;
+      margin-right: 0%;
+    }
+    #ef4g83ddK5uAX41m {
+      font-size: max(0px, calc(1.56172767em - var(--ffsd)));
+    }
+    #WUiLNBMGEsACZ3yz {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 1.56172767em) * -0.1);
+      margin-bottom: calc(max(0px, 1.56172767em) * -0.1);
+    }
+    #jLVtWgFRkwPs6a09 {
+      min-width: 30.70799727rem;
+    }
+    #vUxMrFJ0RUuwUHVZ {
+      grid-area: 18 / 42 / 19 / 59;
+    }
+    #m4E9kMiXHe8vKMm5 {
+      font-size: max(0px, calc(1.36652269em - var(--ffsd)));
+    }
+    #O8OxJ4EDZTmwqTDT {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 1.36652269em) * -0.15);
+      margin-bottom: calc(max(0px, 1.36652269em) * -0.15);
+    }
+    #rXTgfZzkYNjd4M7g {
+      min-width: 30.70799727rem;
+    }
+    #ETU7H2SWAGyo8igo {
+      grid-area: 20 / 41 / 23 / 58;
+    }
+    #tkaa4PzUYuoxSxjG {
+      font-size: max(0px, calc(1.56172767em - var(--ffsd)));
+    }
+    #NYiW2jZFn3cuhNXX {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 1.56172767em) * -0.1);
+      margin-bottom: calc(max(0px, 1.56172767em) * -0.1);
+    }
+    #W89gBk2N1RJ79lbr {
+      min-width: 14.65585621rem;
+    }
+    #A2HAfb6WP6wL6bXm {
+      grid-area: 33 / 45 / 35 / 53;
+    }
+    #BqmWr3TnhoKkt8xz {
+      font-size: max(0px, calc(1.56172767em - var(--ffsd)));
+    }
+    #ChpIEoEdDFwHUBcX {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 1.56172767em) * -0.1);
+      margin-bottom: calc(max(0px, 1.56172767em) * -0.1);
+    }
+    #CqOjJSIoIFIG5d4H {
+      min-width: 29.49104518rem;
+    }
+    #YkIwRBuBmY8fK4Cw {
+      grid-area: 37 / 40 / 39 / 57;
+    }
+    #VvYd5XpjqgdSEHm9 {
+      font-size: max(0px, calc(1.36652269em - var(--ffsd)));
+    }
+    #pniPRtbxVZw8vvdO {
+      transform: translateX(0);
+      margin-top: calc(max(0px, 1.36652269em) * -0.15);
+      margin-bottom: calc(max(0px, 1.36652269em) * -0.15);
+    }
+    #tebUpcZhodQGLldH {
+      min-width: 29.49104518rem;
+    }
+    #idthndTL7qbsYjtj {
+      grid-area: 41 / 39 / 46 / 56;
+    }
+    #WLYhTDDUi8jxhYdM {
+      grid-area: 53 / 48 / 61 / 55;
+    }
+    #KeRSP3xjtPjrmT3q {
+      font-size: max(0px, calc(1.36651537em - var(--ffsd)));
+    }
+    #M5PWv6gTXQeM4smB {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(max(0px, 1.36651537em) * -0.1);
+    }
+    #xmaqvAy3q9NUchsQ {
+      min-width: 6.51370732rem;
+    }
+    #Oou1pIK1tM6Fc94U {
+      grid-area: 55 / 52 / 58 / 54;
+    }
+    #M3C2NWHGNhyNPdJr {
+      grid-template-columns: 5.62225476rem 8.31946816rem 0.00754442rem 0.4996377rem 1.09576636rem 2.40523437rem 0.04512775rem 0.84741366rem 0 1.29746799rem 0.00618387rem 0.15206847rem 2.0171821rem 2.04209625rem 2.00485539rem 0.26613487rem 2.20324333rem 1.06293278rem 1.06293278rem 1.09576636rem 1.86892365rem 8.00699706rem 6.44709929rem 2.60654458rem 1.50842617rem 1.62517151rem 0.11788749rem 0 0 0 0 0 0 4.16484736rem 0.59559029rem 0.68498936rem 0 1.00102256rem 0 0 0 5.26949259rem 0.58584017rem 0 4.17459748rem 0 2.77308928rem 1.80631397rem 0.11788749rem 1.64179897rem 0.86701375rem 3.23855205rem 3.23855205rem 4.43301419rem 1.30828997rem 0 1.21695209rem 0 3.02554052rem 0 0 0 0 5.62225476rem;
+      grid-template-rows: minmax(0.04881981rem, max-content) 0 minmax(
+          1.96084115rem,
+          max-content
+        ) minmax(1.93753294rem, max-content) minmax(
+          0.330665rem,
+          max-content
+        ) minmax(3.44070278rem, max-content) minmax(
+          0.41974443rem,
+          max-content
+        ) minmax(0.51615247rem, max-content) minmax(
+          10.54172767rem,
+          max-content
+        ) minmax(1.76734261rem, max-content) minmax(
+          0.14641288rem,
+          max-content
+        ) minmax(1.24842579rem, max-content) 0 minmax(
+          1.81064129rem,
+          max-content
+        ) 0 minmax(0.57652263rem, max-content) minmax(
+          0.66798689rem,
+          max-content
+        ) minmax(1.81064129rem, max-content) minmax(
+          0.79650865rem,
+          max-content
+        ) minmax(0.0906055rem, max-content) minmax(
+          2.12961038rem,
+          max-content
+        ) minmax(1.46938807rem, max-content) minmax(
+          0.15091464rem,
+          max-content
+        ) minmax(1.62030271rem, max-content) 0 minmax(
+          0.14641288rem,
+          max-content
+        ) minmax(0.33496306rem, max-content) minmax(
+          0.40338202rem,
+          max-content
+        ) minmax(1.81064129rem, max-content) 0 minmax(
+          1.03602239rem,
+          max-content
+        ) 0 minmax(1.81064129rem, max-content) 0 minmax(
+          0.58565154rem,
+          max-content
+        ) minmax(0.87847731rem, max-content) minmax(
+          0.31284547rem,
+          max-content
+        ) minmax(1.49779582rem, max-content) minmax(
+          0.31284547rem,
+          max-content
+        ) minmax(0.48366318rem, max-content) minmax(
+          0.48566452rem,
+          max-content
+        ) minmax(0.13906752rem, max-content) minmax(
+          0.13906752rem,
+          max-content
+        ) 0 minmax(0.876024rem, max-content) minmax(
+          1.01509153rem,
+          max-content
+        ) 0 0 minmax(0.13906752rem, max-content) minmax(
+          0.90887614rem,
+          max-content
+        ) minmax(0.8296581rem, max-content) 0 minmax(
+          1.15669532rem,
+          max-content
+        ) 0 minmax(0.47471754rem, max-content) minmax(
+          1.15534688rem,
+          max-content
+        ) 0 minmax(0.84967507rem, max-content) minmax(
+          0.13793111rem,
+          max-content
+        ) 0 minmax(1.67271018rem, max-content) minmax(
+          0.47024288rem,
+          max-content
+        ) minmax(2.67788044rem, max-content) 0 0;
+    }
+    #hSeTxkXmfpms9Bqd {
+      min-height: 51.09490254vh;
+    }
+    #FlTtMyfOjefd9Mwr {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    #u89dv1QbGlxkSVra {
+      grid-template-columns: 0 100%;
+      grid-template-rows: 0 100%;
+    }
+    #Q0HMUxI6Gl1ZFZSn {
+      grid-area: 5 / 6 / 7 / 18;
+    }
+    #QBYInwH5eCRM4oKK {
+      grid-area: 3 / 8 / 9 / 26;
+    }
+    #Ff9V0kJHqVuccH7x {
+      font-size: max(0px, calc(4.01975233em - var(--ffsd)));
+    }
+    #PgcmwowcKoh1OOkq {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(max(0px, 4.01975233em) * 0.1);
+    }
+    #SdhLmEWQOn9Yaqm4 {
+      min-width: 24.94570644rem;
+    }
+    #S43ncS0xEjKDvkg4 {
+      grid-area: 6 / 12 / 8 / 23;
+    }
+    #nvIYmZiB6yweZa75 {
+      grid-area: 4 / 9 / 10 / 29;
+    }
+    #pgEA5W13hYS4hnoD {
+      grid-area: 2 / 30 / 11 / 35;
+    }
+    #qGOfP0Kw8YxMD6n1 {
+      grid-area: 12 / 2 / 21 / 13;
+    }
+    #euKLKtgOd6wszxoe {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(1.96193171em - var(--ffsd))
+      );
+    }
+    #jALOQVUPF5DJZ2kd {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 1.96193171em) * 0.1
+      );
+    }
+    #QPsLM8k8j9TwAH7J {
+      min-width: 21.12932744rem;
+    }
+    #jqm6AFef6gDiuS9j {
+      grid-area: 15 / 5 / 18 / 10;
+    }
+    #UIfvzQ3J7VKJFAWU {
+      grid-area: 13 / 14 / 22 / 21;
+    }
+    #bDxd2lKSBdCunfQm {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(1.96193171em - var(--ffsd))
+      );
+    }
+    #Z1XmDk3jzmbD9zIO {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 1.96193171em) * 0.1
+      );
+    }
+    #uHnjb1dsvyaFSqfK {
+      min-width: 19.41084936rem;
+    }
+    #BVgnLi45KCCLX13p {
+      grid-area: 16 / 16 / 19 / 19;
+    }
+    #QVzoUjui6T0XVPr9 {
+      grid-area: 24 / 3 / 33 / 11;
+    }
+    #SzpLW1A4e8EQCd07 {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(1.96193171em - var(--ffsd))
+      );
+    }
+    #I2N3MKwUv82F2f7d {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 1.96193171em) * 0.1
+      );
+    }
+    #huSgACAXKRXRXVkZ {
+      min-width: 19.41084936rem;
+    }
+    #V6Hrsln7DhO4CegU {
+      grid-area: 27 / 4 / 30 / 7;
+    }
+    #UtJAjzKHb718kJs7 {
+      grid-area: 25 / 15 / 34 / 22;
+    }
+    #vz2hhGzmZYQz0U78 {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(1.96193171em - var(--ffsd))
+      );
+    }
+    #SnKqmuFxepGFKILR {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 1.96193171em) * 0.1
+      );
+    }
+    #W9gg8yeJxDusBG8K {
+      min-width: 19.41084936rem;
+    }
+    #fZA7z5BSYY3sBknL {
+      grid-area: 28 / 17 / 31 / 20;
+    }
+    #tIV5Q5TcrreORdau {
+      grid-area: 14 / 24 / 23 / 33;
+    }
+    #SKMfkNagUgikczYJ {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(1.96193171em - var(--ffsd))
+      );
+    }
+    #E3n1oZ79QC1P54So {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 1.96193171em) * 0.1
+      );
+    }
+    #vIwmDmIOV92hDY8v {
+      min-width: 19.41084936rem;
+    }
+    #Jt2fdu4tnJ5hl1pc {
+      grid-area: 17 / 27 / 20 / 31;
+    }
+    #aGfMZoDCy7y4KOx6 {
+      grid-area: 26 / 25 / 35 / 34;
+    }
+    #uLbVLAZ3xVvv2eE9 {
+      font-size: max(
+        calc(12px * var(--rfso, var(--bfso, 1))),
+        calc(1.96193171em - var(--ffsd))
+      );
+    }
+    #ZOKPQMz92mstqqLn {
+      transform: translateX(0);
+      margin-top: 0;
+      margin-bottom: calc(
+        max(calc(12px * var(--rfso, var(--bfso, 1))), 1.96193171em) * 0.1
+      );
+    }
+    #dDCshLUMNq1Bp9Ea {
+      min-width: 19.41084936rem;
+    }
+    #twAZeU6a7rTHC01N {
+      grid-area: 29 / 28 / 32 / 32;
+    }
+    #Rv36pyGhY2Mi8Dvz {
+      grid-template-columns: 14.05004255rem 0.02297819rem 0.79795595rem 0.04779978rem 18.51560875rem 0.8108376rem 0.6373218rem 0.63748379rem 0.49147227rem 0.02718226rem 1.31226129rem 0.61309487rem 1.05312978rem 0 0.79795595rem 0 4.78482772rem 14.58941841rem 0 1.79346013rem 0 1.27721636rem 1.70126958rem 0 0.51865453rem 0.27930141rem 0 0.35818238rem 13.23929698rem 5.77676678rem 0 1.79346013rem 0 14.07302075rem;
+      grid-template-rows: 0 minmax(4.26796448rem, max-content) minmax(
+          0.66295302rem,
+          max-content
+        ) minmax(1.45476963rem, max-content) minmax(
+          0.27156568rem,
+          max-content
+        ) minmax(8.03155622rem, max-content) minmax(
+          0.81189892rem,
+          max-content
+        ) minmax(2.7134619rem, max-content) minmax(
+          0.66295302rem,
+          max-content
+        ) minmax(2.64807072rem, max-content) minmax(
+          5.03477517rem,
+          max-content
+        ) 0 0 minmax(1.89083869rem, max-content) 0 0 minmax(
+          2.35431805rem,
+          max-content
+        ) 0 0 minmax(2.63272682rem, max-content) 0 0 minmax(
+          3.63246487rem,
+          max-content
+        ) 0 0 minmax(1.89083869rem, max-content) 0 0 minmax(
+          2.35431805rem,
+          max-content
+        ) 0 0 minmax(2.63272682rem, max-content) 0 0 minmax(
+          9.86478321rem,
+          max-content
+        );
+    }
+    #MKQebh2JK1V4cpdL {
+      min-height: 48.90509746vh;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      background-color: rgba(226, 226, 226, 0.05);
+    }
+    50% {
+      background-color: rgba(226, 226, 226, 0.1);
+    }
+    100% {
+      background-color: rgba(226, 226, 226, 0.05);
+    }
+  }
