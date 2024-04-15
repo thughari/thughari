@@ -1,5 +1,6 @@
 ## Hey, I'm Hari
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=thughari&theme=highcontrast&hide_border=true&border_radius=25&mode=daily)
+![Stats](https://github-readme-stats.vercel.app/api?username=thughari&theme=dark&hide_border=false&include_all_commits=false&count_private=false)
 
 ![Hari stats](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=thughari&theme=dark)
 ![Hari Stats](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=thughari&theme=dark)
