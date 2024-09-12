@@ -5,7 +5,7 @@
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=thughari&theme=dark_lover" alt="thughari" /></a> </p>
 
 - 🤝 I’m looking for help with [Music player application](https://github.com/thughari/music-app)
-- 💬 Ask me about **Java, Spring Boot and Angular **
+- 💬 Ask me about **Java, Spring Boot and Angular**
 - 📫 How to reach me **thughari3@gmail.com**
 - 👨‍💻 Know about me **https://thughari.github.io/**
 - 📄 Know about my experiences **https://thughari.github.io/Hari%20Thatikonda.pdf**
