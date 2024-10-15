@@ -8,7 +8,7 @@
 - 💬 Ask me about **Java, Spring Boot and Angular**
 - 📫 How to reach me **thughari3@gmail.com**
 - 👨‍💻 Know about me **https://thughari.github.io/**
-- 📄 Know about my experiences **https://thughari.github.io/Hari%20Thatikonda.pdf**
+- 📄 Know about my experiences **[Hari's Resume](https://github.com/thughari/thughari/blob/main/Hari%20Thatikonda.pdf)**
 
 <div> <a href="https://twitter.com/thug_hari" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" target="_blank"></a>
 <a href="https://www.linkedin.com/in/hari-thatikonda" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
