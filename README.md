@@ -5,7 +5,7 @@
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=thughari&theme=dark_lover" alt="thughari" /></a> </p>
 
 - 💬 Ask me about **Java, Spring Boot and Angular**
-- 📫 How to reach me **thughari3@gmail.com**
+- 📫 How to reach me **haribabutatikonda3@gmail.com**
 - 👨‍💻 Know about me **https://thughari.github.io/**
 - 📄 Know about my experiences **[Hari's Resume](https://github.com/thughari/thughari/blob/main/Hari%20Thatikonda.pdf)**
 
