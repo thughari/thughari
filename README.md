@@ -44,7 +44,7 @@
 <h3 align="left">Support:</h3>
 <p><a href="https://www.buymeacoffee.com/thughari"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="thughari" /></a></p><br><br>
 
-<h3 align="left">Stars</h3>
+<h3 align="left">Stats</h3>
 <img align="left" height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=thughari&layout=compact&theme=dark" alt=thughari />
 
 <p>&nbsp;<img align="center" height="180em" src="https://github-readme-stats.vercel.app/api?username=thughari&show_icons=true&locale=en&theme=dark" alt="thughari" /></p>
